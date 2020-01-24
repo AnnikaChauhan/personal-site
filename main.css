@@ -2,68 +2,94 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E6E8E9;
+    color: #271127;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
 }
 
-body {
-    background-color: rgb(38, 1, 38);
-    color: white;
-}
-
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(38,1,38,0.8)), url("Images/Pink_stone_texture.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(75,45,75,0.7)), url("Images/Pink_stone_texture.jpg");
     width: auto;
-    height: 600px;
-    background-position: center;
+    height: auto;
 }
 
-.menuContainer {
-    background-color: lightsalmon;
-    width: 200px;
+.headerContainer{
     padding: 10px;
-    /* display: flex; */
+    margin: 20px;
+    text-align: center;
+    margin: auto 0;
+    color: #E6E8E9;
 }
 
-.menuContainer img {
-    width: 75px;
-    height: 75px;
-    padding-bottom: 20px;
+.headerContainer h1 {
+    font-size: 3.5em;
 }
 
-.menuItem {
-    text-decoration: none;
-    color: white;
+.headerContainer h2 {
     font-size: 2em;
 }
 
-.nameContainer {
-    border: 2px greenyellow dotted;
-    height: 400px;
-    padding: 200px 0;
-    text-align: center;
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
 }
 
-.nameContainer h1 {
-    font-weight: bolder;
-    font-size: 6em;
-    margin-top: 50px;
+.navigation h3 {
+    font-size: 2em;
+    margin: 5px;
 }
 
-.nameContainer h2 {
-    font-weight: bold;
-    font-size: 3em;
-}
-
-#factRotation {
-    border: 2px greenyellow dotted;
-    
-}
-
-#factRotation p {
+.navigation button {
     font-size: 1.5em;
+    margin: 5px;
 }
 
+footer {
+    background-color: #4B2D4B;
+    color: white;
+    width: 100%;
+    padding: 5px 20px;
+    bottom: 0;
+    text-align: right;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* laptops and above */
+@media screen and (min-width: 895px) {
+    header {
+        text-align: center;
+        height: 500px;
+        min-width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    h1 {
+        width: auto;
+        margin: 70px 20px;
+        height: 100px;
+        font-size: 99px;
+    }
+
+    .narative {
+        margin: 15px auto;
+        padding: 10px 50px;
+        font-size: 1.5em;
+        line-height: 1.4em;
+    }
 
 
 
