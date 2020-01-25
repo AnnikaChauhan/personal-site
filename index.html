@@ -3,12 +3,12 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annika</title>
-    <link href="main.css" rel="stylesheet" type="text/css">
+    <title>Annika | Developer</title>
+    <link id="pagestyle" href="main_light.css" rel="stylesheet" type="text/css">
 </head>
-<!-- light and dark mode toggle to come -->
+
 <body>
-    <header>
+    <header id="top">
         <div class="headerContainer" id="header">
             <h1>Annika Chauhan</h1>
             <h2>Software Developer</h2>
@@ -18,40 +18,75 @@
         <section id="projects">
             <div class="navigation">
                 <h3>Projects</h3>
-                <button>Preview</button>
-                <button>More Info</button>
+                <button class="prvw" id="prjPrvw">Preview</button>
+                <button class="closePrvw" id="prjXprvw">Close</button>
+                <button class="more" id="prjMr">All Info</button>
+                <button class="closeMore" id="prjXmr">Close</button>
             </div>
-            <div class="preview">
-
+            <div class="preview" id="prvwPrj">
+                <h2>Projects Preview</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quia ea inventore, asperiores incidunt
+                    expedita minus ipsam rerum cum officia enim natus eaque eligendi recusandae nulla nam consequatur
+                    voluptates est.</p>
             </div>
-            <div>
-
+            <div class="full" id="mrPrj">
+                <h2>Projects All</h2>
+                <!-- projects going from left to right, swipe to next one -->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo neque ad repellendus commodi, magnam
+                    nam maiores sunt quod consectetur beatae eligendi eos quam explicabo ipsam quas, cupiditate, ipsa
+                    recusandae doloremque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit minima
+                    obcaecati qui nihil, et dicta, animi numquam reiciendis voluptatem amet delectus! Iure atque iusto
+                    veritatis odit a saepe neque optio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                    quis itaque asperiores quibusdam hic deserunt veritatis voluptates et in earum excepturi fuga,
+                    molestias voluptatem sunt aperiam ut nesciunt, rem cupiditate.</p>
             </div>
         </section>
         <section id="about">
             <div class="navigation">
                 <h3>About</h3>
-                <button>Preview</button>
-                <button>More Info</button>
+                <button class="prvw" id="abtPrvw">Preview</button>
+                <button class="closePrvw" id="abtXprvw">Close</button>
+                <button class="more" id="abtMr">All Info</button>
+                <button class="closeMore" id="abtXmr">Close</button>
             </div>
-            <div class="preview">
-
+            <div class="preview" id="prvwAbt">
+                <h2>About Preview</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quia ea inventore, asperiores incidunt expedita minus ipsam rerum cum officia enim natus eaque eligendi recusandae nulla nam consequatur voluptates est.</p>
             </div>
-            <div>
-
+            <div class="full" id="mrAbt">
+                <h2>About All</h2>
+                <!-- projects going from left to right, swipe to next one -->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo neque ad repellendus commodi, magnam
+                    nam maiores sunt quod consectetur beatae eligendi eos quam explicabo ipsam quas, cupiditate, ipsa
+                    recusandae doloremque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit minima
+                    obcaecati qui nihil, et dicta, animi numquam reiciendis voluptatem amet delectus! Iure atque iusto
+                    veritatis odit a saepe neque optio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                    quis itaque asperiores quibusdam hic deserunt veritatis voluptates et in earum excepturi fuga,
+                    molestias voluptatem sunt aperiam ut nesciunt, rem cupiditate.</p>
             </div>
         </section>
         <section id="contact">
             <div class="navigation">
                 <h3>Contact</h3>
-                <button>Preview</button>
-                <button>More Info</button>
+                <button class="prvw" id="cntctPrvw">Preview</button>
+                <button class="closePrvw" id="cntctXprvw">Close</button>
+                <button class="more" id="cntctMr">All Info</button>
+                <button class="closeMore" id="cntctXmr">Close</button>
             </div>
-            <div  class="preview">
-
+            <div class="preview" id="prvwCntct">
+                <h2>Contact Preview</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quia ea inventore, asperiores incidunt expedita minus ipsam rerum cum officia enim natus eaque eligendi recusandae nulla nam consequatur voluptates est.</p>
             </div>
-            <div>
-
+            <div class="full" id="mrCntct">
+                <h2>Contact All</h2>
+                <!-- projects going from left to right, swipe to next one -->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo neque ad repellendus commodi, magnam
+                    nam maiores sunt quod consectetur beatae eligendi eos quam explicabo ipsam quas, cupiditate, ipsa
+                    recusandae doloremque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit minima
+                    obcaecati qui nihil, et dicta, animi numquam reiciendis voluptatem amet delectus! Iure atque iusto
+                    veritatis odit a saepe neque optio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                    quis itaque asperiores quibusdam hic deserunt veritatis voluptates et in earum excepturi fuga,
+                    molestias voluptatem sunt aperiam ut nesciunt, rem cupiditate.</p>
             </div>
         </section>
         <section id="cv">
@@ -62,8 +97,13 @@
         </section>
     </main>
     <footer>
-        <a href="">Back to Top</a>
-        <p>Email: <a href="mailto:annika@annikachauhan.com">annika@annikachauhan.com</a></p>
-        <p>LinkedIn: <a href="">Annika Chauhan (TBC)</a></p>
+        <div id="mode">
+            <button id="stylesheet1" onclick="initateLight();">Light</button>
+    <button id="stylesheet2" onclick="initateDark();">Dark</button>
+        </div>
+        <a href="#top"><button>Back to Top</button></a>
     </footer>
-    <type="text/javascript"> </script> </body> </html>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+    color: #4B2D4B;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+header {
+    background-image: linear-gradient(rgba(218,214,214,0.6), rgba(75,45,75,0.8)), url("Images/Pink_stone_texture.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerContainer{
+    padding: 40vh 0;
+    text-align: center;
+    color: #E6E8E9;
+
+}
+
+.headerContainer h1, h2 {
+    width: 100vw;
+    padding: 5px 0;
+    background-color: #FFA500;
+}
+
+.headerContainer h1 {
+    padding-top: 15px;
+    font-size: 3em;
+}
+
+.headerContainer h2 {
+    padding-bottom: 15px;
+    font-size: 2em;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #FFA500;
+    color: #E6E8E9;
+    border-top: 2px solid #E6E8E9;
+    border-bottom: 2px solid #E6E8E9;
+}
+
+#projects {
+    border-top: 2px solid #E6E8E9;
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.navigation h3 {
+    font-size: 2em;
+    margin: 5px;
+}
+
+.navigation button {
+    font-size: 1.5em;
+    margin: 5px;
+    border: 1px solid transparent;
+    background-color: #DAD6D6;
+    text-align: center;
+    color: #4B2D4B;
+}
+
+.closePrvw {
+    display: none;
+}
+
+.closeMore {
+    display: none;
+}
+
+.preview h2, .full h2 {
+    background-color: #DAD6D6;
+    padding-left: 10px;
+}
+
+.preview {
+    height: auto;
+    display: none;
+}
+
+.full {
+    height: 100vh;
+    display: none;
+}
+
+.preview p {
+    text-align: justify;
+    padding: 10px 20px;
+}
+
+footer {
+    background-color: #DAD6D6;
+    color: #F9F9F9;
+    width: 100vw;
+    padding: 5px 20px;
+    bottom: 0;
+    border-top: 2px solid #E6E8E9;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer button{
+    color: #E6E8E9;
+    text-decoration: none;
+    font-size: 1em;
+    border: 1px #FFA500 solid;
+    background-color: #FFA500;
+}
+
+/* laptops and above */
+@media screen and (min-width: 895px) {
+    /* header {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } */
+
+
+
+}
