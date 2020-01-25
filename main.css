@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #E6E8E9;
+    background-color: #F9F9F9;
     color: #271127;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
@@ -15,7 +15,7 @@ body {
 
 header {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(75,45,75,0.7)), url("Images/Pink_stone_texture.jpg");
-    width: auto;
+    width: 100vw;
     height: auto;
 }
 
@@ -38,7 +38,10 @@ header {
 .navigation {
     display: flex;
     justify-content: flex-start;
-    margin: 10px;
+    padding: 10px;
+    background-color: #FFA500;
+    color: #E6E8E9;
+    border-top: 
 }
 
 .navigation h3 {
@@ -49,11 +52,13 @@ header {
 .navigation button {
     font-size: 1.5em;
     margin: 5px;
+    border: 1px solid transparent;
+    
 }
 
 footer {
     background-color: #4B2D4B;
-    color: white;
+    color: #F9F9F9;
     width: 100%;
     padding: 5px 20px;
     bottom: 0;
@@ -61,7 +66,7 @@ footer {
 }
 
 footer a {
-    color: white;
+    color: #E6E8E9;
     text-decoration: none;
 }
 
@@ -76,20 +81,7 @@ footer a {
         background-repeat: no-repeat;
         background-size: cover;
     }
-    
-    h1 {
-        width: auto;
-        margin: 70px 20px;
-        height: 100px;
-        font-size: 99px;
-    }
-
-    .narative {
-        margin: 15px auto;
-        padding: 10px 50px;
-        font-size: 1.5em;
-        line-height: 1.4em;
-    }
 
 
 
+}
