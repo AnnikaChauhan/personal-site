@@ -1,3 +1,5 @@
+// document.getElementById('mrPrj').style.display = 'none';
+
 // button variable declarations
 
 const prjPrvw = document.getElementById('prjPrvw');
@@ -35,7 +37,7 @@ prjMr.onclick = function() {
     prjXmr.style.display = 'initial';
     document.getElementById('mrPrj').style.display = 'initial';
     //height does not work??
-    //document.getElementById('mrPrj').style.height = '100vh';
+    document.getElementById('mrPrj').style.height = '100vh';
     //this did not work either
     document.getElementById('mrPrj').style.backgroundColor = 'green';
 }
@@ -101,16 +103,13 @@ cntctXmr.onclick = function() {
 }
 
 // style sheet swap
-function swapStyleSheet(sheet) {
-    document.getElementById("pagestyle").setAttribute("href", sheet);  
+const light = document.getElementById('lightsheet');
+const dark = document.getElementById('darksheet');
+
+light.onclick = function() {
+    document.getElementById('pagestyle').setAttribute('href','main_light.css');
 }
 
-function initateDark() {
-    let style2 = document.getElementById("stylesheet2");
-    style2.onclick = swapStyleSheet("main_dark.css");
-}
-
-function initateLight() {
-    let style1 = document.getElementById("stylesheet1");
-    style1.onclick = swapStyleSheet("main_light.css");
+dark.onclick = function() {
+    document.getElementById('pagestyle').setAttribute('href','main_dark.css');
 }
