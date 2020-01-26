@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #4B2D4B;
+    background-color: #646262;
     color: #DAD6D6;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
@@ -129,7 +129,7 @@ button {
 }
 
 footer {
-    background-color: #DAD6D6;
+    background-color: #646262;
     color: #F9F9F9;
     width: 100vw;
     padding: 5px 20px;
