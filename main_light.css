@@ -27,7 +27,6 @@ header {
     padding: 40vh 0;
     text-align: center;
     color: #E6E8E9;
-
 }
 
 .headerContainer h1, h2 {
@@ -48,12 +47,17 @@ header {
 
 .navigation {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 10px;
     background-color: #FFA500;
     color: #E6E8E9;
     border-top: 2px solid #E6E8E9;
     border-bottom: 2px solid #E6E8E9;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #E6E8E9;
 }
 
 #projects {
@@ -64,7 +68,6 @@ button {
     border-radius: 5px;
     padding: 5px;
 }
-
 
 .navigation h3 {
     font-size: 2em;
@@ -80,33 +83,18 @@ button {
     color: #4B2D4B;
 }
 
-.closePrvw {
-    display: none;
-}
-
 .closeMore {
     display: none;
 }
 
-.preview h2, .full h2 {
+.full h2 {
     background-color: #DAD6D6;
     padding-left: 10px;
-}
-
-.preview {
-    height: auto;
-    display: none;
 }
 
 .full {
     height: auto;
     /* display: none; */
-
-}
-
-.preview p {
-    text-align: justify;
-    padding: 10px 20px;
 }
 
 .container {
@@ -114,7 +102,6 @@ button {
     flex-direction: column;
     justify-content: center;
     margin: 5px 0;
-
 }
 
 /* if any are over three containers they need to become way smaller */
@@ -123,6 +110,20 @@ button {
     border: 1px solid #FFA500;
     height: 30vh;
     margin: 1px;
+    padding: 10px;
+}
+
+.box h4 {
+    padding: 5px 0;
+    border-bottom: #DAD6D6 3px solid;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.box p {
+    padding: 10px;
+    text-align: justify;
+    font-size: 1.1em;
 }
 
 footer {
@@ -149,12 +150,17 @@ footer button{
 }
 
 /* laptops and above */
-@media screen and (min-width: 895px) {
-    /* header {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    } */
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 5px 0;
+    }
 
+    .box {
+        overflow: scroll;
+        height: 50vh;
+        width: 33.33vw;
+    }
 }
