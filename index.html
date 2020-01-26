@@ -6,9 +6,10 @@
     <title>Annika | Developer</title>
     <link id="pagestyle" href="main_light.css" rel="stylesheet" type="text/css">
 </head>
-
+<!-- change navigation to open close -->
 <body>
-    <header id="top">
+    <div id="top"></div>
+    <header>
         <div class="headerContainer" id="header">
             <h1>Annika Chauhan</h1>
             <h2>Software Developer</h2>
@@ -31,14 +32,20 @@
             </div>
             <div class="full" id="mrPrj">
                 <h2>Projects All</h2>
-                <!-- projects going from left to right, swipe to next one -->
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo neque ad repellendus commodi, magnam
-                    nam maiores sunt quod consectetur beatae eligendi eos quam explicabo ipsam quas, cupiditate, ipsa
-                    recusandae doloremque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit minima
-                    obcaecati qui nihil, et dicta, animi numquam reiciendis voluptatem amet delectus! Iure atque iusto
-                    veritatis odit a saepe neque optio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
-                    quis itaque asperiores quibusdam hic deserunt veritatis voluptates et in earum excepturi fuga,
-                    molestias voluptatem sunt aperiam ut nesciunt, rem cupiditate.</p>
+                <div id="prjContainer" class="container">
+                    <div class="box project">
+                        <h4>Header - Project 1</h4>
+                        <p>Detail</p>
+                    </div>
+                    <div class="box project">
+                        <h4>Header - Project 2</h4>
+                        <p>Detail</p>
+                    </div>
+                    <div class="box project">
+                        <h4>Header - Project 3</h4>
+                        <p>Detail</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="about">
@@ -51,18 +58,26 @@
             </div>
             <div class="preview" id="prvwAbt">
                 <h2>About Preview</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quia ea inventore, asperiores incidunt expedita minus ipsam rerum cum officia enim natus eaque eligendi recusandae nulla nam consequatur voluptates est.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quia ea inventore, asperiores incidunt
+                    expedita minus ipsam rerum cum officia enim natus eaque eligendi recusandae nulla nam consequatur
+                    voluptates est.</p>
             </div>
             <div class="full" id="mrAbt">
                 <h2>About All</h2>
-                <!-- projects going from left to right, swipe to next one -->
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo neque ad repellendus commodi, magnam
-                    nam maiores sunt quod consectetur beatae eligendi eos quam explicabo ipsam quas, cupiditate, ipsa
-                    recusandae doloremque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit minima
-                    obcaecati qui nihil, et dicta, animi numquam reiciendis voluptatem amet delectus! Iure atque iusto
-                    veritatis odit a saepe neque optio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
-                    quis itaque asperiores quibusdam hic deserunt veritatis voluptates et in earum excepturi fuga,
-                    molestias voluptatem sunt aperiam ut nesciunt, rem cupiditate.</p>
+                <div id="abtContainer" class="container">
+                    <div class="box about">
+                        <h4>Header - Why Tech</h4>
+                        <p>Detail</p>
+                    </div>
+                    <div class="box about">
+                        <h4>Header - Previous Experence</h4>
+                        <p>Detail</p>
+                    </div>
+                    <div class="box about">
+                        <h4>Header - Hobbies & Interests</h4>
+                        <p>Detail</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="contact">
@@ -75,18 +90,27 @@
             </div>
             <div class="preview" id="prvwCntct">
                 <h2>Contact Preview</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quia ea inventore, asperiores incidunt expedita minus ipsam rerum cum officia enim natus eaque eligendi recusandae nulla nam consequatur voluptates est.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quia ea inventore, asperiores incidunt
+                    expedita minus ipsam rerum cum officia enim natus eaque eligendi recusandae nulla nam consequatur
+                    voluptates est.</p>
             </div>
             <div class="full" id="mrCntct">
                 <h2>Contact All</h2>
-                <!-- projects going from left to right, swipe to next one -->
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo neque ad repellendus commodi, magnam
-                    nam maiores sunt quod consectetur beatae eligendi eos quam explicabo ipsam quas, cupiditate, ipsa
-                    recusandae doloremque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit minima
-                    obcaecati qui nihil, et dicta, animi numquam reiciendis voluptatem amet delectus! Iure atque iusto
-                    veritatis odit a saepe neque optio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
-                    quis itaque asperiores quibusdam hic deserunt veritatis voluptates et in earum excepturi fuga,
-                    molestias voluptatem sunt aperiam ut nesciunt, rem cupiditate.</p>
+                <div id="cntctContainer"  class="container">
+                    <div class="box contact">
+                        <h4>Header - Socials, GH & Email</h4>
+                        <p>Detail</p>
+                    </div>
+                    <div class="box contact">
+                        <h4>Header - Form</h4>
+                        <p>Detail</p>
+                    </div>
+                    <div class="box contact">
+                        <h4>Header - Something else</h4>
+                        <!-- maybe a note on how I'm always interested in talking to peoople about dev, experienced developers or those looking to start in the field -->
+                        <p>Detail</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="cv">
@@ -98,8 +122,8 @@
     </main>
     <footer>
         <div id="mode">
-            <button id="stylesheet1" onclick="initateLight();">Light</button>
-    <button id="stylesheet2" onclick="initateDark();">Dark</button>
+            <button id="lightsheet" onclick="initateLight();">Light Mode</button>
+            <button id="darksheet" onclick="initateDark();">Dark Mode</button>
         </div>
         <a href="#top"><button>Back to Top</button></a>
     </footer>

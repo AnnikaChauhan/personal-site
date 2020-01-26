@@ -99,13 +99,30 @@ button {
 }
 
 .full {
-    height: 100vh;
-    display: none;
+    height: auto;
+    /* display: none; */
+
 }
 
 .preview p {
     text-align: justify;
     padding: 10px 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px 0;
+
+}
+
+/* if any are over three containers they need to become way smaller */
+
+.box {
+    border: 1px solid #FFA500;
+    height: 30vh;
+    margin: 1px;
 }
 
 footer {
@@ -127,6 +144,10 @@ footer button{
     background-color: #FFA500;
 }
 
+#lightsheet {
+    display: none;
+}
+
 /* laptops and above */
 @media screen and (min-width: 895px) {
     /* header {
@@ -135,7 +156,5 @@ footer button{
         background-repeat: no-repeat;
         background-size: cover;
     } */
-
-
 
 }
