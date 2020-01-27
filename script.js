@@ -1,4 +1,6 @@
-// document.getElementById('mrPrj').style.display = 'none';
+document.getElementById('aPrj').style.display = 'none';
+document.getElementById('aAbt').style.display = 'none';
+document.getElementById('aCntct').style.display = 'none';
 
 // button variable declarations
 
