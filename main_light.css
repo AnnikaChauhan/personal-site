@@ -12,7 +12,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
 }
-
+/* set up classes for light and dark stuff to make it easier to change */
 header {
     background-image: linear-gradient(rgba(218,214,214,0.6), rgba(75,45,75,0.8)), url("Images/Pink_stone_texture.jpg");
     width: 100vw;
@@ -161,6 +161,6 @@ footer button{
     .box {
         overflow: scroll;
         height: 50vh;
-        width: 33.33vw;
+        width: 33.33%;
     }
 }
