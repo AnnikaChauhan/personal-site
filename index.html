@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Annika | Developer</title>
+    <script src="https://kit.fontawesome.com/0f382413cd.js" crossorigin="anonymous" ></script>
     <link id="pagestyle" href="main_light.css" rel="stylesheet" type="text/css">
 </head>
 <!-- replace open/close words with icons, find out how to import font awesome-->
@@ -13,63 +14,62 @@
     <div id="top"></div>
     <header>
         <h1>Annika Chauhan</h1>
-        <h2>Software Developer</h2>
+        <h2 id="element"></h2>
     </header>
+    <div class="notification">
+        <p><i class="fas fa-angle-down bounce"></i></p>
+    </div>
     <main>
         <section id="projects">
-            <div class="navigation">
+            <article id="title" class="header">
                 <h3>Projects</h3>
-                <button class="more" id="prjO">Open Projects</button>
-                <button class="closeMore" id="prjX">Close Projects</button>
-            </div>
-            <div class="full" id="aPrj">
-                <!-- <h2>All Projects</h2> -->
-                <div id="prjContainer" class="container">
-                    <div class="box project">
-                        <h4>Project 1</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsa mollitia architecto,
-                            asperiores ut tempore eum? Ab eligendi id maxime, doloremque, architecto voluptatibus,
-                            aperiam magni commodi at animi enim officiis.
-                        </p>
-                    </div>
-                    <div class="box project">
-                        <h4>Project 2</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quasi beatae excepturi
-                            recusandae aspernatur quo alias aliquam praesentium ut, nesciunt saepe expedita veniam
-                            consequuntur earum quaerat perferendis officiis reiciendis impedit.</p>
-                    </div>
-                    <div class="box project">
-                        <h4>Project 3</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi laboriosam porro molestias
-                            voluptatum labore fuga sint ipsam qui, saepe dolorum illum repudiandae earum eaque nostrum
-                            quis mollitia distinctio fugit tempora.</p>
-                    </div>
-                    <div class="box project">
-                        <h4>Project 4</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi laboriosam porro molestias
-                            voluptatum labore fuga sint ipsam qui, saepe dolorum illum repudiandae earum eaque nostrum
-                            quis mollitia distinctio fugit tempora.</p>
-                    </div>
-                    <div class="box project">
-                        <h4>Project 5</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi laboriosam porro molestias
-                            voluptatum labore fuga sint ipsam qui, saepe dolorum illum repudiandae earum eaque nostrum
-                            quis mollitia distinctio fugit tempora.</p>
-                    </div>
-                    <div class="box project">
-                        <h4>Project 6</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi laboriosam porro molestias
-                            voluptatum labore fuga sint ipsam qui, saepe dolorum illum repudiandae earum eaque nostrum
-                            quis mollitia distinctio fugit tempora.</p>
-                    </div>
-                </div>
-            </div>
+            </article>
+            <article id="prj1" class="prjBox">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article id="prj2" class="prjBox">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article id="prj3" class="prjBox">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article id="prj4" class="prjBox">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article id="prj5" class="prjBox">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article id="prj6" class="prjBox">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article id="prj7" class="prjBox">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article id="prj8" class="prjBox">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article id="prj9" class="prjBox">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article id="prj10" class="prjBox">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
         </section>
+        <br>
+        <br>
         <section id="about">
-            <div class="navigation">
+            <div class="titles">
                 <h3>About</h3>
-                <button class="more" id="abtO">Open About</button>
-                <button class="closeMore" id="abtX">Close About</button>
             </div>
             <div class="full" id="aAbt">
                 <!-- <h2>All About</h2> -->
@@ -108,10 +108,10 @@
             </div>
         </section>
         <section id="contact">
-            <div class="navigation">
+            <div class="titles">
                 <h3>Contact</h3>
-                <button class="more" id="cntctO">Open Contact</button>
-                <button class="closeMore" id="cntctX">Close Contact</button>
+                <!-- <button class="more" id="cntctO">Open Contact</button>
+                <button class="closeMore" id="cntctX">Close Contact</button> -->
             </div>
             <div class="full" id="aCntct">
                 <!-- <h2>All Contact</h2> -->
@@ -157,7 +157,7 @@
             </div>
         </section>
         <section id="cv">
-            <div class="navigation">
+            <div class="titles">
                 <h3><a href="Annika Chauhan Template CV.pdf" target="_blank">CV Download</a></h3>
             </div>
         </section>
@@ -169,6 +169,8 @@
         </div> -->
         <a href="#top"><button>Back to Top</button></a>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
     <script src="script.js" type="text/javascript"></script>
 </body>
 
