@@ -1,3 +1,9 @@
+new TypeIt('#simpleUsage', {
+    strings: 'This is a simple string.',
+    speed: 50,
+    waitUntilVisible: true
+  }).go();
+
 // document.getElementById('aPrj').style.display = 'none';
 // document.getElementById('aAbt').style.display = 'none';
 // document.getElementById('aCntct').style.display = 'none';
