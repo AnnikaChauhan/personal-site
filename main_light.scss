@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$background-color: #f9f9f9 ;
+$font-color: #4B2D4B ;
+$header-color: #FFA500;
+
+$purple:#4B2D4B;
+$orange: #FFA500;
+$grey1: #f9f9f9;
+$grey2: #e7e4e4;
+$grey3: #DAD6D6;
+
+$highlight-border: 2px solid greenyellow;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    color: $font-color;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+}
+
+header {
+    background-color: $grey3;
+    color: $purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+h1 {
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: $orange;
+    color: $purple;
+
+    a {
+        text-decoration: none;
+        color: $purple;
+    }
+
+    button {
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 1.5em;
+        margin: 5px;
+        background-color: $grey3;
+        border: 1px transparent solid;
+        text-align: center;
+        color: #4B2D4B;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    h3 {
+        font-size: 2.5em;
+        margin-left: 10px;
+    }
+}
+
+.more {
+    display: none;
+}
+
+.full {
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.box {
+    height: 30vh;
+    padding: 10px;
+    color: $purple;
+    overflow: scroll;
+
+    h4 {
+        padding: 5px 0;
+        border-bottom: $grey3 3px solid;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    p {
+        margin-top: 10px;
+        padding: 15px 15px;
+        text-align: justify;
+        font-size: 1.1em;
+    }
+}
+
+.project p:hover {
+    background-color: $grey3;
+}
+
+#formContact {
+    height: auto;
+}
+
+
+.contactMethods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: $purple;
+        padding: 5px 0;
+    }
+
+}
+
+footer {
+    background-color: $grey3;
+    width: 100vw;
+    padding: 10px 20px;
+    bottom: 0;
+    text-align: right;
+    // display: flex;
+    // justify-content: flex-end;
+
+    button {
+        color: $grey2;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 5px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        background-color: $purple;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+
+/* tablets and above */
+@media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 6em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box {
+        overflow: scroll;
+        height: 30vh;
+        width: 33.33%;
+    }
+}
