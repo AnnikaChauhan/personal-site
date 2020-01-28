@@ -50,7 +50,7 @@ header {
 .notification {
     font-size: 2em;
     text-align: center;
-    height: 6.1vh;
+    height: 6vh;
     background-color: $grey3;
 
     .fa-angle-down {
@@ -78,6 +78,8 @@ header {
 section {
     height: auto;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
 
     .header {
         font-size: 2.5em;
@@ -93,13 +95,123 @@ section {
     }
 }
 
-#projects {
-    display: grid;
-    grid-template-areas: ;
 
+
+#projects {
+    margin: 5px;
+    display: grid;
+    grid-template-areas:
+    "prj1 prj1"
+    "prj2 prj3"
+    "prj4 prj4"
+    "prj5 prj6"
+    "prj7 prj7"
+    "prj8 prj9"
+    "prj10 prj10";
+    grid-gap: 5px;
+
+    #prj1 {
+        grid-area: prj1;
+    }
+
+    #prj2 {
+        grid-area: prj2;
+    }
+
+    #prj3 {
+        grid-area: prj3;
+    }
+
+    #prj4 {
+        grid-area: prj4;
+    }
+
+    #prj5 {
+        grid-area: prj5;
+    }
+
+    #prj6 {
+        grid-area: prj6;
+    }
+
+    #prj7 {
+        grid-area: prj7;
+    }
+
+    #prj8 {
+        grid-area: prj8;
+    }
+
+    #prj9 {
+        grid-area: prj9;
+    }
+
+    #prj10 {
+        grid-area: prj10;
+    }
+
+    .prjBox {
+        border: 1px solid $grey1;
+        height: 20vh;
+        padding: 10px;
+
+        h3 {
+            font-size: 1.5em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid $grey3;
+
+        }
+
+        p {
+            padding: 5px 0;
+            text-align: justify;
+        }
+
+        .launch {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 2em;
+            padding: 5px;
+
+            a {
+                text-decoration: none;
+                color: $purple;
+            }
+        }
+        
+        &:hover {
+            background-color: $purple;
+            color: $grey3;
+
+            a {
+                color: $grey3;
+            }
+
+        }
+        
+    }
 }
 
+#cv {
+    font-size: 2.5em;
+    background-color: $grey1;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-top: $orange 1px dotted;
+    
+    &:hover {
+        background-color: $orange;
+    }
 
+    a {
+        text-decoration: none;
+        color: $purple;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
 
 
 footer {
@@ -108,8 +220,6 @@ footer {
     padding: 10px 20px;
     bottom: 0;
     text-align: right;
-    // display: flex;
-    // justify-content: flex-end;
 
     button {
         color: $grey2;
@@ -126,9 +236,8 @@ footer {
     }
 }
 
-
 /* tablets and above */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
 
     header {
         h1 {
@@ -138,15 +247,43 @@ footer {
             font-size: 3em;
         }
     }
+
+    section {
+        height: 102vh;
+
+        &:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .header {
+            height: 102vh;
+            width: 10vw;
+            padding-left: 0;
+            justify-content: center;
+            
+            h3 {
+                transform: rotate(-90deg);
+            }
+        }
+    }
     
-    .container {
-        display: flex;
-        flex-direction: row;
+    #projects {
+        margin: auto;
+        display: grid;
+        grid-template-areas:
+        "prj1 prj1 prj2 prj3"
+        "prj4 prj5 prj5 prj5"
+        "prj6 prj7 prj8 prj8"
+        "prj9 prj9 prj9 prj10";
+        grid-gap: 5px;
     }
 
-    .box {
-        overflow: scroll;
-        height: 30vh;
-        width: 33.33%;
+    .prjBox {
+        height: auto;
     }
+
 }

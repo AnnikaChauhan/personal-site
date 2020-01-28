@@ -51,7 +51,7 @@ header h2 {
 .notification {
   font-size: 2em;
   text-align: center;
-  height: 6.1vh;
+  height: 6vh;
   background-color: #DAD6D6;
 }
 
@@ -99,6 +99,13 @@ header h2 {
 section {
   height: auto;
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 section .header {
@@ -119,8 +126,142 @@ section article {
 }
 
 #projects {
+  margin: 5px;
   display: -ms-grid;
   display: grid;
+      grid-template-areas: "prj1 prj1" "prj2 prj3" "prj4 prj4" "prj5 prj6" "prj7 prj7" "prj8 prj9" "prj10 prj10";
+  grid-gap: 5px;
+}
+
+#projects #prj1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: prj1;
+}
+
+#projects #prj2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: prj2;
+}
+
+#projects #prj3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: prj3;
+}
+
+#projects #prj4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: prj4;
+}
+
+#projects #prj5 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: prj5;
+}
+
+#projects #prj6 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: prj6;
+}
+
+#projects #prj7 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: prj7;
+}
+
+#projects #prj8 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: prj8;
+}
+
+#projects #prj9 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: prj9;
+}
+
+#projects #prj10 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: prj10;
+}
+
+#projects .prjBox {
+  border: 1px solid #f9f9f9;
+  height: 20vh;
+  padding: 10px;
+}
+
+#projects .prjBox h3 {
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #DAD6D6;
+}
+
+#projects .prjBox p {
+  padding: 5px 0;
+  text-align: justify;
+}
+
+#projects .prjBox .launch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 2em;
+  padding: 5px;
+}
+
+#projects .prjBox .launch a {
+  text-decoration: none;
+  color: #4B2D4B;
+}
+
+#projects .prjBox:hover {
+  background-color: #4B2D4B;
+  color: #DAD6D6;
+}
+
+#projects .prjBox:hover a {
+  color: #DAD6D6;
+}
+
+#cv {
+  font-size: 2.5em;
+  background-color: #f9f9f9;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  border-top: #FFA500 1px dotted;
+}
+
+#cv:hover {
+  background-color: #FFA500;
+}
+
+#cv a {
+  text-decoration: none;
+  color: #4B2D4B;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 footer {
@@ -146,26 +287,49 @@ footer button:hover {
 }
 
 /* tablets and above */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   header h1 {
     font-size: 6em;
   }
   header h2 {
     font-size: 3em;
   }
-  .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  section {
+    height: 102vh;
+  }
+  section:nth-child(odd) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .box {
-    overflow: scroll;
-    height: 30vh;
-    width: 33.33%;
+  section:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  section .header {
+    height: 102vh;
+    width: 10vw;
+    padding-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section .header h3 {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  #projects {
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "prj1 prj1 prj2 prj3" "prj4 prj5 prj5 prj5" "prj6 prj7 prj8 prj8" "prj9 prj9 prj9 prj10";
+    grid-gap: 5px;
+  }
+  .prjBox {
+    height: auto;
   }
 }
 /*# sourceMappingURL=main_light.css.map */
