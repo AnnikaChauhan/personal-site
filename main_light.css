@@ -138,7 +138,7 @@ section .detail {
 }
 
 .detail .box {
-  border: 1px solid #f9f9f9;
+  z-index: 1;
   height: 20vh;
   padding: 10px;
 }
@@ -354,7 +354,7 @@ footer button {
 }
 
 /* tablets and above */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 787px) {
   header h1 {
     font-size: 6em;
   }

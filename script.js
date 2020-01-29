@@ -5,7 +5,7 @@ const instance = new  TypeIt('#element', {
     .delete(1)
     .pause(300)
     .delete(1)
-    .pause(500)
+    .pause(400)
     .type('e')
     .pause(100)
     .type('r')
