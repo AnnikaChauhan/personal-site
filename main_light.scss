@@ -253,10 +253,18 @@ footer {
 
         &:nth-child(odd) {
             flex-direction: row;
+
+            .header h3 {
+                transform: rotate(-90deg);
+            }
         }
 
         &:nth-child(even) {
             flex-direction: row-reverse;
+
+            .header h3 {
+                transform: rotate(90deg);
+            }
         }
 
         .header {
@@ -264,10 +272,11 @@ footer {
             width: 10vw;
             padding-left: 0;
             justify-content: center;
+            box-shadow: black;
             
-            h3 {
-                transform: rotate(-90deg);
-            }
+            // h3 {
+            //     transform: rotate(-90deg);
+            // }
         }
     }
     

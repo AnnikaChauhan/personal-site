@@ -303,11 +303,19 @@ footer button:hover {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  section:nth-child(odd) .header h3 {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
   section:nth-child(even) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+  }
+  section:nth-child(even) .header h3 {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   section .header {
     height: 102vh;
@@ -316,10 +324,8 @@ footer button:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  section .header h3 {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    -webkit-box-shadow: black;
+            box-shadow: black;
   }
   #projects {
     margin: auto;
