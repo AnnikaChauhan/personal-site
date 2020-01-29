@@ -7,9 +7,7 @@
     <script src="https://kit.fontawesome.com/0f382413cd.js" crossorigin="anonymous"></script>
     <link id="pagestyle" href="main_light.css" rel="stylesheet" type="text/css">
 </head>
-<!-- turn the "all projects", "all about" and "all contact" into a drop down so you can filter -->
-<!-- at the bottom of each project have a little heart that people can click if they like it, with number of likes?? -->
-
+<!-- turn the "projects", "about" and "contact" into a drop down so you can filter -->
 <body>
     <div id="top"></div>
     <header>
@@ -17,16 +15,16 @@
         <h2 id="element"></h2>
     </header>
     <div class="notification">
-        <p><i class="fas fa-angle-down bounce"></i></p>
+        <a href="#projectTitle"><i class="fas fa-angle-down bounce"></i></a>
     </div>
     <main>
         <section id="projectTitle">
-            <article id="title" class="header">
+            <article id="prjh3" class="header">
                 <h3>Projects</h3>
             </article>
             <!-- background image on projects - a screenshot of what it is -->
             <div id="projects" class="detail">
-                <article id="prj1" class="prjBox">
+                <article id="prj1" class="prjBox box">
                     <h3>Project 1</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <div class="launch">
@@ -34,7 +32,7 @@
                         <a href=""><i class="fas fa-code"></i></a>
                     </div>
                 </article>
-                <article id="prj2" class="prjBox">
+                <article id="prj2" class="prjBox box">
                     <h3>Project 2</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <div class="launch">
@@ -42,7 +40,7 @@
                         <a><i class="fas fa-code"></i></a>
                     </div>
                 </article>
-                <article id="prj3" class="prjBox">
+                <article id="prj3" class="prjBox box">
                     <h3>Pick Me Up</h3>
                     <p>Uses JS to return a motivational quote from the happy database.</p>
                     <div class="launch">
@@ -50,7 +48,7 @@
                         <a href=""><i class="fas fa-code"></i></a>
                     </div>
                 </article>
-                <article id="prj4" class="prjBox">
+                <article id="prj4" class="prjBox box">
                     <h3>Chore Door</h3>
                     <p>A short game that uses JS.</p>
                     <div class="launch">
@@ -58,7 +56,7 @@
                         <a><i class="fas fa-code"></i></a>
                     </div>
                 </article>
-                <article id="prj5" class="prjBox">
+                <article id="prj5" class="prjBox box">
                     <h3>Project 5</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <div class="launch">
@@ -66,7 +64,7 @@
                         <a><i class="fas fa-code"></i></a>
                     </div>
                 </article>
-                <article id="prj6" class="prjBox">
+                <article id="prj6" class="prjBox box">
                     <h3>Project 6</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <div class="launch">
@@ -74,7 +72,7 @@
                         <a><i class="fas fa-code"></i></a>
                     </div>
                 </article>
-                <article id="prj7" class="prjBox">
+                <article id="prj7" class="prjBox box">
                     <h3>Project 7</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <div class="launch">
@@ -82,7 +80,7 @@
                         <a><i class="fas fa-code"></i></a>
                     </div>
                 </article>
-                <article id="prj8" class="prjBox">
+                <article id="prj8" class="prjBox box">
                     <h3>Project 8</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <div class="launch">
@@ -90,7 +88,7 @@
                         <a><i class="fas fa-code"></i></a>
                     </div>
                 </article>
-                <article id="prj9" class="prjBox">
+                <article id="prj9" class="prjBox box">
                     <h3>Project 9</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <div class="launch">
@@ -98,7 +96,7 @@
                         <a><i class="fas fa-code"></i></a>
                     </div>
                 </article>
-                <article id="prj10" class="prjBox">
+                <article id="prj10" class="prjBox box">
                     <h3>Project 10</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <div class="launch">
@@ -108,28 +106,74 @@
                 </article>
             </div>
         </section>
-        <section id="about">
-            <article id="title" class="header">
+        <section id="aboutTitle">
+            <article id="abth3" class="header">
                 <h3>About</h3>
-                <div id="abouts" class="detail">
-                    <!-- <article id="abt1" class="abtBox">
-                        <h3>My Story 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </article> -->
-                </div>
+            </article>
+            <div id="abouts" class="detail">
+                <article id="abt1" class="abtBox box">
+                    <h3>My Journey into Coding</h3>
+                    For a long time I've thought about how cool it would be to know how to code, however as
+                    a young Asian lady it is much harder to choose to do something that is completely
+                    "unknown". I remember picking up a book about C++ when I was younger and wanting
+                    to experiment with the code, but being far too afraid that I'd break the computer to
+                    try!
+                    <br>
+                    I don't currently have much programming experience, other than working with Excel VBA
+                    which is limited to Microsoft software. Most of the people around me, my friends and my
+                    family, are all doctors, dentists, lawyers or accountants. So the natural path when
+                    you're not sure what you want to be and you're good at Math is to become an accountant.
+                    <br>
+                    My first experience of programming was in my first full time job as a Finance Assistant.
+                    I was using Excel and thinking about how to best use a macro to automate a task so that
+                    it would do it itself. I googled for hours and found all of these fascinating
+                    codes that could do so many things beyond a simple spreadsheet - you could even create
+                    emails! And so I fell down the rabbit hole, I googled and I coded. Then I started to
+                    pick up lots of new skills that could be applied to my job and some that could
+                    help the jobs of those around me, I was kind of like a problem solver and I loved it!
+                    <br>
+                    I moved into my second job a year and a half after I started the first. As a Data
+                    Analyst I had far more flexibility in producing systems that really pushed the limit of
+                    what Excel could do and I had many more problems to solve. I realised that I really
+                    did enjoy making things rather than analysing the data, and so I started to learn coding
+                    using Codecademy on their Web Development path. The more I learnt, the more I enjoyed
+                    and so I decided that the next logical step would be to pursue
+                    it as a full time career.
+                </p>
+                </article>
+                <article id="abt2" class="abtBox box">
+                    <h3>My Journey before Coding</h3>
+                    <!-- this includes education etc -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+                <article id="abt3" class="abtBox box">
+                    <h3>My Journey alongside Coding</h3>
+                    <!-- this includes hobbies etc, with photos, if a lot do deperately -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam aliquid veniam nobis. Ipsam perferendis explicabo corporis tempora accusamus velit sunt! Minima ipsa aperiam recusandae unde maxime officiis eius voluptatem ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, perspiciatis itaque perferendis odit eaque nobis ipsa quo libero a ab. Veritatis animi modi odit qui itaque hic perspiciatis obcaecati nam?</p>
+                </article>
+            </div>
         </section>
-        <section id="contact">
-            <article id="title" class="header">
+        <section id="contactTitle">
+            <article id="cntcth3" class="header">
                 <h3>Contact</h3>
-                <div id="contacts" class="detail">
-                    <!-- <article id="cntct1" class="cntctBox">
-                        <h3>Contact Me!</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </article> -->
-                </div>
+            </article>
+            <div id="contacts" class="detail">
+                <article id="cntct1" class="cntctBox box">
+                    <h3>Get in touch!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi libero reiciendis at molestiae officiis blanditiis minus maiores excepturi amet eligendi? Porro impedit pariatur adipisci optio blanditiis quam error ut ratione!</p>
+                </article>
+                <article id="cntct2" class="cntctBox box">
+                    <h3>My Contact Details</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis at vel sequi quisquam voluptatibus optio nisi voluptates delectus aliquam quia ab, ratione molestias exercitationem quibusdam possimus itaque neque rerum architecto?</p>
+                </article>
+                <article id="cntct3" class="cntctBox box">
+                    <h3>Request a follow up</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis quibusdam libero in sed. Quae, consequatur enim labore iure dolor sapiente dicta nesciunt laboriosam reprehenderit sunt? Aut natus autem iste!</p>
+                </article>
+            </div>
         </section>
         <article id="cv">
-                <a href="Annika Chauhan Template CV.pdf" target="_blank">CV Download</a>
+                <a href="Annika Chauhan Template CV.pdf" target="_blank">Download my CV</a>
         </article>
     </main>
     <footer>

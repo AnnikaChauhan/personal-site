@@ -51,6 +51,7 @@ img {
 }
 
 button {
+    cursor: pointer;
     text-align: center;
     height: 150px;
     width: 150px;

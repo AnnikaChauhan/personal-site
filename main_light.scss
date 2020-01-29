@@ -53,6 +53,12 @@ header {
     height: 6vh;
     background-color: $grey3;
 
+    a {
+        color: $purple;
+        cursor: pointer;
+        opacity: 0.6;
+    }
+
     .fa-angle-down {
         font-size: 2em;          
     }
@@ -90,16 +96,36 @@ section {
         padding-left: 10px;
     }
 
-    article {
+    .detail {
         padding: 0 10px;
     }
 }
 
-
-
-#projects {
+.detail {
     margin: 5px;
     display: grid;
+
+    .box {
+        border: 1px solid $grey1;
+        height: 20vh;
+        padding: 10px;
+
+        h3 {
+            font-size: 1.5em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid $grey3;
+
+        }
+
+        p {
+            padding: 5px 0;
+            text-align: justify;
+        }
+    }
+
+}
+
+#projects {
     grid-template-areas:
     "prj1 prj1"
     "prj2 prj3"
@@ -151,22 +177,6 @@ section {
     }
 
     .prjBox {
-        border: 1px solid $grey1;
-        height: 20vh;
-        padding: 10px;
-
-        h3 {
-            font-size: 1.5em;
-            padding-bottom: 10px;
-            border-bottom: 2px solid $grey3;
-
-        }
-
-        p {
-            padding: 5px 0;
-            text-align: justify;
-        }
-
         .launch {
             display: flex;
             justify-content: space-evenly;
@@ -176,12 +186,14 @@ section {
             a {
                 text-decoration: none;
                 color: $purple;
+                cursor: pointer;
             }
         }
         
         &:hover {
             background-color: $purple;
             color: $grey3;
+            opacity: 0.8;
 
             a {
                 color: $grey3;
@@ -192,12 +204,63 @@ section {
     }
 }
 
+#abouts {
+    height: auto;
+    grid-template-areas: 
+    "abt1"
+    "abt2"
+    "abt3";
+
+    #abt1 {
+        grid-area: abt1;
+    }
+
+    #abt2 {
+        grid-area: abt2;
+    }
+
+    #abt3 {
+        grid-area: abt3;
+    }
+
+    .abtBox {
+        height: auto;
+        text-align: justify;
+    }
+}
+
+#contacts {
+    height: auto;
+    grid-template-areas:
+    "cntct1"
+    "cntct2"
+    "cntct3";
+
+    #cntct1 {
+        grid-area: cntct1;
+    }
+
+    #cntct2 {
+        grid-area: cntct2;
+    }
+
+    #cntct3 {
+        grid-area: cntct3;
+    }
+
+    .cntctBox {
+        height: auto;
+        text-align: justify;
+    }
+}
+
 #cv {
     font-size: 2.5em;
     background-color: $grey1;
     height: 10vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-left: 10px;
     border-top: $orange 1px dotted;
     
@@ -229,10 +292,7 @@ footer {
         border: 1px solid transparent;
         border-radius: 5px;
         background-color: $purple;
-
-        &:hover {
-            cursor: pointer;
-        }
+        cursor: pointer;
     }
 }
 
@@ -249,7 +309,7 @@ footer {
     }
 
     section {
-        height: 102vh;
+        height: 95vh;
 
         &:nth-child(odd) {
             flex-direction: row;
@@ -268,15 +328,19 @@ footer {
         }
 
         .header {
-            height: 102vh;
+            // height: 102vh;
             width: 10vw;
             padding-left: 0;
             justify-content: center;
-            box-shadow: black;
-            
-            // h3 {
-            //     transform: rotate(-90deg);
-            // }
+            box-shadow: black;   
+        }
+
+        #prjh3, #abth3 {
+            height: 105vh;
+        }
+
+        #cntcth3 {
+            height: 100%;
         }
     }
     
@@ -286,8 +350,9 @@ footer {
         grid-template-areas:
         "prj1 prj1 prj2 prj3"
         "prj4 prj5 prj5 prj5"
-        "prj6 prj7 prj8 prj8"
-        "prj9 prj9 prj9 prj10";
+        "prj6 prj6 prj7 prj8"
+        "prj9 prj10 prj10 prj10";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 5px;
     }
 
@@ -295,4 +360,19 @@ footer {
         height: auto;
     }
 
+    #abouts {
+        margin: auto;
+        grid-template-areas: 
+        "abt1 abt2"
+        "abt1 abt3";
+        grid-template-columns: 2fr 3fr;
+    }
+
+    #contacts {
+        margin: auto;
+        grid-template-areas: 
+        "cntct1 cntct3"
+        "cntct2 cntct3";
+        grid-template-columns: 3fr 2fr;
+    }
 }

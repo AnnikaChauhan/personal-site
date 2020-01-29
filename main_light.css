@@ -55,6 +55,12 @@ header h2 {
   background-color: #DAD6D6;
 }
 
+.notification a {
+  color: #4B2D4B;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
 .notification .fa-angle-down {
   font-size: 2em;
 }
@@ -121,14 +127,34 @@ section .header {
   padding-left: 10px;
 }
 
-section article {
+section .detail {
   padding: 0 10px;
 }
 
-#projects {
+.detail {
   margin: 5px;
   display: -ms-grid;
   display: grid;
+}
+
+.detail .box {
+  border: 1px solid #f9f9f9;
+  height: 20vh;
+  padding: 10px;
+}
+
+.detail .box h3 {
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #DAD6D6;
+}
+
+.detail .box p {
+  padding: 5px 0;
+  text-align: justify;
+}
+
+#projects {
       grid-template-areas: "prj1 prj1" "prj2 prj3" "prj4 prj4" "prj5 prj6" "prj7 prj7" "prj8 prj9" "prj10 prj10";
   grid-gap: 5px;
 }
@@ -197,23 +223,6 @@ section article {
   grid-area: prj10;
 }
 
-#projects .prjBox {
-  border: 1px solid #f9f9f9;
-  height: 20vh;
-  padding: 10px;
-}
-
-#projects .prjBox h3 {
-  font-size: 1.5em;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #DAD6D6;
-}
-
-#projects .prjBox p {
-  padding: 5px 0;
-  text-align: justify;
-}
-
 #projects .prjBox .launch {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,15 +237,73 @@ section article {
 #projects .prjBox .launch a {
   text-decoration: none;
   color: #4B2D4B;
+  cursor: pointer;
 }
 
 #projects .prjBox:hover {
   background-color: #4B2D4B;
   color: #DAD6D6;
+  opacity: 0.8;
 }
 
 #projects .prjBox:hover a {
   color: #DAD6D6;
+}
+
+#abouts {
+  height: auto;
+      grid-template-areas: "abt1" "abt2" "abt3";
+}
+
+#abouts #abt1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: abt1;
+}
+
+#abouts #abt2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: abt2;
+}
+
+#abouts #abt3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: abt3;
+}
+
+#abouts .abtBox {
+  height: auto;
+  text-align: justify;
+}
+
+#contacts {
+  height: auto;
+      grid-template-areas: "cntct1" "cntct2" "cntct3";
+}
+
+#contacts #cntct1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: cntct1;
+}
+
+#contacts #cntct2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: cntct2;
+}
+
+#contacts #cntct3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: cntct3;
+}
+
+#contacts .cntctBox {
+  height: auto;
+  text-align: justify;
 }
 
 #cv {
@@ -249,6 +316,9 @@ section article {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: 10px;
   border-top: #FFA500 1px dotted;
 }
@@ -280,9 +350,6 @@ footer button {
   border: 1px solid transparent;
   border-radius: 5px;
   background-color: #4B2D4B;
-}
-
-footer button:hover {
   cursor: pointer;
 }
 
@@ -295,7 +362,7 @@ footer button:hover {
     font-size: 3em;
   }
   section {
-    height: 102vh;
+    height: 95vh;
   }
   section:nth-child(odd) {
     -webkit-box-orient: horizontal;
@@ -318,7 +385,6 @@ footer button:hover {
             transform: rotate(90deg);
   }
   section .header {
-    height: 102vh;
     width: 10vw;
     padding-left: 0;
     -webkit-box-pack: center;
@@ -327,15 +393,35 @@ footer button:hover {
     -webkit-box-shadow: black;
             box-shadow: black;
   }
+  section #prjh3, section #abth3 {
+    height: 105vh;
+  }
+  section #cntcth3 {
+    height: 100%;
+  }
   #projects {
     margin: auto;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "prj1 prj1 prj2 prj3" "prj4 prj5 prj5 prj5" "prj6 prj7 prj8 prj8" "prj9 prj9 prj9 prj10";
+        grid-template-areas: "prj1 prj1 prj2 prj3" "prj4 prj5 prj5 prj5" "prj6 prj6 prj7 prj8" "prj9 prj10 prj10 prj10";
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
   }
   .prjBox {
     height: auto;
+  }
+  #abouts {
+    margin: auto;
+        grid-template-areas: "abt1 abt2" "abt1 abt3";
+    -ms-grid-columns: 2fr 3fr;
+        grid-template-columns: 2fr 3fr;
+  }
+  #contacts {
+    margin: auto;
+        grid-template-areas: "cntct1 cntct3" "cntct2 cntct3";
+    -ms-grid-columns: 3fr 2fr;
+        grid-template-columns: 3fr 2fr;
   }
 }
 /*# sourceMappingURL=main_light.css.map */
