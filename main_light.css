@@ -31,10 +31,10 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: 94vh;
 }
 
-h1 {
+header h1 {
   font-size: 4em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,59 +44,67 @@ h1 {
           align-items: center;
 }
 
-h2 {
+header h2 {
   font-size: 2em;
 }
 
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 10vh;
-  background-color: #FFA500;
-  color: #4B2D4B;
-}
-
-.navigation a {
-  text-decoration: none;
-  color: #4B2D4B;
-}
-
-.navigation button {
-  border-radius: 5px;
-  padding: 5px;
-  font-size: 1.5em;
-  margin: 5px;
-  background-color: #DAD6D6;
-  border: 1px transparent solid;
+.notification {
+  font-size: 2em;
   text-align: center;
+  height: 6vh;
+  background-color: #DAD6D6;
+}
+
+.notification a {
   color: #4B2D4B;
-}
-
-.navigation button:hover {
   cursor: pointer;
+  opacity: 0.6;
 }
 
-.navigation h3 {
-  font-size: 2.5em;
-  margin-left: 10px;
+.notification .fa-angle-down {
+  font-size: 2em;
 }
 
-.more {
-  display: none;
+.notification .bounce {
+  display: inline-block;
+  position: relative;
+  -webkit-animation: bounce 1s infinite linear;
+  animation: bounce 1s infinite linear;
 }
 
-.full {
+@-webkit-keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -0.2em;
+  }
+  70% {
+    top: -0.3em;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -0.2em;
+  }
+  70% {
+    top: -0.3em;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+section {
   height: auto;
-}
-
-.container {
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,65 +112,226 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+section .header {
+  font-size: 2.5em;
+  background-color: #FFA500;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+}
+
+section .detail {
+  padding: 0 10px;
+}
+
+.detail {
+  margin: 5px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.detail .box {
+  z-index: 1;
+  height: 20vh;
+  padding: 10px;
+}
+
+.detail .box h3 {
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #DAD6D6;
+}
+
+.detail .box p {
+  padding: 5px 0;
+  text-align: justify;
+}
+
+#projects {
+      grid-template-areas: "prj1 prj1" "prj2 prj3" "prj4 prj4" "prj5 prj6" "prj7 prj7" "prj8 prj9" "prj10 prj10";
+  grid-gap: 5px;
+}
+
+#projects #prj1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: prj1;
+}
+
+#projects #prj2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: prj2;
+}
+
+#projects #prj3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: prj3;
+}
+
+#projects #prj4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: prj4;
+}
+
+#projects #prj5 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: prj5;
+}
+
+#projects #prj6 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: prj6;
+}
+
+#projects #prj7 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: prj7;
+}
+
+#projects #prj8 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: prj8;
+}
+
+#projects #prj9 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: prj9;
+}
+
+#projects #prj10 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: prj10;
+}
+
+#projects .prjBox .launch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: auto;
+  font-size: 2em;
+  padding: 5px;
 }
 
-.box {
-  height: 30vh;
-  padding: 10px;
+#projects .prjBox .launch a {
+  text-decoration: none;
   color: #4B2D4B;
-  overflow: scroll;
+  cursor: pointer;
 }
 
-.box h4 {
-  padding: 5px 0;
-  border-bottom: #DAD6D6 3px solid;
-  font-size: 1.5em;
-  font-weight: bold;
+#projects .prjBox:hover {
+  background-color: #4B2D4B;
+  color: #DAD6D6;
+  opacity: 0.8;
 }
 
-.box p {
-  padding: 15px 15px;
-  text-align: justify;
-  font-size: 1.1em;
+#projects .prjBox:hover a {
+  color: #DAD6D6;
 }
 
-.project {
-  border: 2px solid greenyellow;
-}
-
-.project p:hover {
-  background-color: #DAD6D6;
-}
-
-#formContact {
+#abouts {
   height: auto;
+      grid-template-areas: "abt1" "abt2" "abt3";
 }
 
-.contactMethods {
+#abouts #abt1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: abt1;
+}
+
+#abouts #abt2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: abt2;
+}
+
+#abouts #abt3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: abt3;
+}
+
+#abouts .abtBox {
+  height: auto;
+  text-align: justify;
+}
+
+#contacts {
+  height: auto;
+      grid-template-areas: "cntct1" "cntct2" "cntct3";
+}
+
+#contacts #cntct1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: cntct1;
+}
+
+#contacts #cntct2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: cntct2;
+}
+
+#contacts #cntct3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: cntct3;
+}
+
+#contacts .cntctBox {
+  height: auto;
+  text-align: justify;
+}
+
+#cv {
+  font-size: 2.5em;
+  background-color: #f9f9f9;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10px;
+  border-top: #FFA500 1px dotted;
 }
 
-.contactMethods a {
+#cv:hover {
+  background-color: #FFA500;
+}
+
+#cv a {
   text-decoration: none;
-  font-weight: bold;
   color: #4B2D4B;
-  padding: 5px 0;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 footer {
@@ -181,33 +350,78 @@ footer button {
   border: 1px solid transparent;
   border-radius: 5px;
   background-color: #4B2D4B;
-}
-
-footer button:hover {
   cursor: pointer;
 }
 
 /* tablets and above */
-@media screen and (min-width: 768px) {
-  h1 {
+@media screen and (min-width: 787px) {
+  header h1 {
     font-size: 6em;
   }
-  h2 {
+  header h2 {
     font-size: 3em;
   }
-  .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  section {
+    height: 95vh;
+  }
+  section:nth-child(odd) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .box {
-    overflow: scroll;
-    height: 30vh;
-    width: 33.33%;
+  section:nth-child(odd) .header h3 {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  section:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  section:nth-child(even) .header h3 {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  section .header {
+    width: 10vw;
+    padding-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: black;
+            box-shadow: black;
+  }
+  section #prjh3, section #abth3 {
+    height: 105vh;
+  }
+  section #cntcth3 {
+    height: 100%;
+  }
+  #projects {
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "prj1 prj1 prj2 prj3" "prj4 prj5 prj5 prj5" "prj6 prj6 prj7 prj8" "prj9 prj10 prj10 prj10";
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+  }
+  .prjBox {
+    height: auto;
+  }
+  #abouts {
+    margin: auto;
+        grid-template-areas: "abt1 abt2" "abt1 abt3";
+    -ms-grid-columns: 2fr 3fr;
+        grid-template-columns: 2fr 3fr;
+  }
+  #contacts {
+    margin: auto;
+        grid-template-areas: "cntct1 cntct3" "cntct2 cntct3";
+    -ms-grid-columns: 3fr 2fr;
+        grid-template-columns: 3fr 2fr;
   }
 }
 /*# sourceMappingURL=main_light.css.map */
