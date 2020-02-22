@@ -72,82 +72,10 @@ section .detail {
 #projectDatabase {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "prj1 prj2"  "prj3 prj4" "prj5 prj6" "prj7 prj8" "prj9 prj10" "prj11 prj12";
+      grid-template-areas: "prj1 prj2"  "prj3 prj4" "prj5 prj6" "prj7 prj8" "prj9 prj10" "prj11 prj12";
   grid-gap: 20px;
   height: 20vh;
   padding-top: 10px;
-}
-
-#projectDatabase #prj1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: prj1;
-}
-
-#projectDatabase #prj2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: prj2;
-}
-
-#projectDatabase #prj3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: prj3;
-}
-
-#projectDatabase #prj4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: prj4;
-}
-
-#projectDatabase #prj5 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: prj5;
-}
-
-#projectDatabase #prj6 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: prj6;
-}
-
-#projectDatabase #prj7 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: prj7;
-}
-
-#projectDatabase #prj8 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: prj8;
-}
-
-#projectDatabase #prj9 {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: prj9;
-}
-
-#projectDatabase #prj10 {
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
-  grid-area: prj10;
-}
-
-#projectDatabase #prj11 {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: prj11;
-}
-
-#projectDatabase #prj12 {
-  -ms-grid-row: 6;
-  -ms-grid-column: 2;
-  grid-area: prj12;
 }
 
 #projectDatabase .prjBox .launch {
@@ -227,7 +155,7 @@ footer button:hover {
 #imageReel {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "img1 img2" "img3 img4";
+      grid-template-areas: "img1 img2" "img3 img4";
   grid-gap: 20px;
   height: 20vh;
   padding-top: 10px;
@@ -275,13 +203,13 @@ footer button:hover {
 /* tablets and above */
 @media screen and (min-width: 787px) {
   #projectDB {
-    height: 150vh;
+    height: 90vh;
   }
   #imageDB {
     height: 120vh;
   }
   #projectDatabase {
-        grid-template-areas: "prj1 prj2 prj3" "prj4 prj5 prj6" "prj7 prj8 prj9" "prj10 prj11 prj12";
+        grid-template-areas: "prj1 prj2 prj3" "prj4 prj5 prj6" "prj7 prj8 prj9" "prj10 prj11 prj12";
   }
   #imageReel {
         grid-template-areas: "img1 img2 img3 img4";

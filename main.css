@@ -163,37 +163,25 @@ section .detail {
 }
 
 #projects {
-      grid-template-areas: "prj1" "prj2"  "prj3";
+      grid-template-areas: "prj1" "prj2"  "prj3";
 }
 
 #projects #prj1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: prj1;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.5))), url("./Images/IMG_3433_1.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url("./Images/IMG_3433_1.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 #projects #prj2 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: prj2;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.5))), url("./Images/IMG_6609.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url("./Images/IMG_6609.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 #projects #prj3 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: prj3;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.5))), url("./Images/IMG_5044.JPG");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url("./Images/IMG_5044.JPG");
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 .launchable .launch {
@@ -220,7 +208,7 @@ section .detail {
 
 #abouts {
   height: auto;
-      grid-template-areas: "abt1" "abt2" "abt3";
+      grid-template-areas: "abt1" "abt2" "abt3";
 }
 
 #abouts .box p {
@@ -231,28 +219,18 @@ section .detail {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: abt1;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.5))), url("./Images/IMG_6609.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url("./Images/IMG_6609.jpg");
-  background-repeat: no-repeat;
 }
 
 #abouts #abt2 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: abt2;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.5))), url("./Images/IMG_3433_1.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url("./Images/IMG_3433_1.jpg");
-  background-repeat: no-repeat;
 }
 
 #abouts #abt3 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: abt3;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.5))), url("./Images/IMG_5044.JPG");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url("./Images/IMG_5044.JPG");
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 #abouts #abt3 p {
@@ -266,7 +244,7 @@ section .detail {
 
 #contacts {
   height: auto;
-      grid-template-areas: "cntct1" "cntct2" "cntct3";
+      grid-template-areas: "cntct1" "cntct2" "cntct3";
 }
 
 #contacts #cntct1 {
@@ -497,14 +475,14 @@ footer button:hover {
     margin: auto;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "prj1 prj2" "prj3 prj3";
+        grid-template-areas: "prj1 prj2" "prj3 prj3";
   }
   .prjBox {
     height: auto;
   }
   #abouts {
     margin: auto;
-        grid-template-areas: "abt1 abt1" "abt2 abt3";
+        grid-template-areas: "abt1 abt1" "abt2 abt3";
     -ms-grid-columns: 3fr 2fr;
         grid-template-columns: 3fr 2fr;
   }
