@@ -91,54 +91,6 @@ section {
     height: 20vh;
     padding-top: 10px;
 
-    #prj1 {
-        grid-area: prj1;
-    }
-
-    #prj2 {
-        grid-area: prj2;
-    }
-
-    #prj3 {
-        grid-area: prj3;
-    }
-
-    #prj4 {
-        grid-area: prj4;
-    }
-
-    #prj5 {
-        grid-area: prj5;
-    }
-
-    #prj6 {
-        grid-area: prj6;
-    }
-
-    #prj7 {
-        grid-area: prj7;
-    }
-
-    #prj8 {
-        grid-area: prj8;
-    }
-
-    #prj9 {
-        grid-area: prj9;
-    }
-
-    #prj10 {
-        grid-area: prj10;
-    }
-
-    #prj11 {
-        grid-area: prj11;
-    }
-
-    #prj12 {
-        grid-area: prj12;
-    }
-
     .prjBox {
         .launch {
             display: flex;
@@ -254,7 +206,7 @@ footer {
 @media screen and (min-width: 787px) {
 
     #projectDB {
-        height: 150vh;
+        height: 90vh;
     }
 
     #imageDB {
