@@ -1,0 +1,278 @@
+$background-color: white ;
+$font-color: black;
+$header-color: #FFA500;
+
+$purple:#4B2D4B;
+$orange: #FFA500;
+$grey1: white;
+$grey2: #e7e4e4;
+$grey3: #DAD6D6;
+
+$highlight-border: 2px solid greenyellow;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    color: $font-color;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4 {
+    color: $purple;
+}
+
+section {
+    width: 100vw;
+    height: 210vh;
+    text-align: center;
+
+    .header {
+        font-size: 2.5em;
+        background-color: $orange;
+        height: auto;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .detail {
+        padding: 0 10px;
+    }
+}
+
+.detail {
+    margin: 5px;
+    display: grid;
+
+    .box {
+        z-index: 1;
+        height: 30vh;
+        padding: 10px;
+
+        h3 {
+            font-size: 1.5em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid $grey3;
+
+        }
+
+        p {
+            padding: 5px 0;
+            text-align: justify;
+            font-size: 1.1em;
+        }
+    }
+
+
+}
+
+#projectDatabase {
+    display: grid;
+    grid-template-areas:
+    "prj1 prj2" 
+    "prj3 prj4"
+    "prj5 prj6"
+    "prj7 prj8"
+    "prj9 prj10"
+    "prj11 prj12";
+    grid-gap: 20px;
+    height: 20vh;
+    padding-top: 10px;
+
+    #prj1 {
+        grid-area: prj1;
+    }
+
+    #prj2 {
+        grid-area: prj2;
+    }
+
+    #prj3 {
+        grid-area: prj3;
+    }
+
+    #prj4 {
+        grid-area: prj4;
+    }
+
+    #prj5 {
+        grid-area: prj5;
+    }
+
+    #prj6 {
+        grid-area: prj6;
+    }
+
+    #prj7 {
+        grid-area: prj7;
+    }
+
+    #prj8 {
+        grid-area: prj8;
+    }
+
+    #prj9 {
+        grid-area: prj9;
+    }
+
+    #prj10 {
+        grid-area: prj10;
+    }
+
+    #prj11 {
+        grid-area: prj11;
+    }
+
+    #prj12 {
+        grid-area: prj12;
+    }
+
+    .prjBox {
+        .launch {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 2em;
+            padding: 5px;
+
+            a {
+                text-decoration: none;
+                color: $purple;
+                cursor: pointer;
+            }
+        }
+        
+        &:hover {
+            background-color: $grey3;
+            opacity: 0.8;
+
+        }
+        
+    }
+}
+
+#cv {
+    font-size: 2.5em;
+    background-color: $grey1;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    border-top: $orange 1px dotted;
+    
+    &:hover {
+        background-color: $orange;
+    }
+
+    a {
+        text-decoration: none;
+        color: $purple;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+
+
+footer {
+    background-color: $grey3;
+    width: 100vw;
+    padding: 10px 20px;
+    bottom: 0;
+    text-align: right;
+
+    button {
+        color: $grey2;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 5px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        background-color: $purple;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $grey2;
+            color: $purple;
+        }
+    }
+}
+
+#imageReel {
+    display: grid;
+    grid-template-areas: 
+    "img1 img2"
+    "img3 img4";
+    grid-gap: 20px;
+    height: 20vh;
+    padding-top: 10px;
+
+    .image {
+        height: 40vh;
+        width: 40vh;
+        border: $highlight-border;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .portrait {
+        transform: rotate(90deg);
+    }
+
+    #img1 {
+        grid-area: img1;
+    }
+
+    #img2 {
+        grid-area: img2;
+    }
+
+    #img3 {
+        grid-area: img3;
+    }
+
+    #img4 {
+        grid-area: img4;
+    }
+}
+
+
+/* tablets and above */
+@media screen and (min-width: 787px) {
+
+    #projectDB {
+        height: 150vh;
+    }
+
+    #imageDB {
+        height: 120vh;
+    }
+
+    #projectDatabase {
+        grid-template-areas:
+        "prj1 prj2 prj3"
+        "prj4 prj5 prj6"
+        "prj7 prj8 prj9"
+        "prj10 prj11 prj12";
+    }
+
+    #imageReel {
+        grid-template-areas: 
+        "img1 img2 img3 img4";
+    }
+
+
+}

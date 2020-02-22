@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4 {
+  color: #4B2D4B;
+}
+
+section {
+  width: 100vw;
+  height: 210vh;
+  text-align: center;
+}
+
+section .header {
+  font-size: 2.5em;
+  background-color: #FFA500;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+section .detail {
+  padding: 0 10px;
+}
+
+.detail {
+  margin: 5px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.detail .box {
+  z-index: 1;
+  height: 30vh;
+  padding: 10px;
+}
+
+.detail .box h3 {
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #DAD6D6;
+}
+
+.detail .box p {
+  padding: 5px 0;
+  text-align: justify;
+  font-size: 1.1em;
+}
+
+#projectDatabase {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "prj1 prj2"  "prj3 prj4" "prj5 prj6" "prj7 prj8" "prj9 prj10" "prj11 prj12";
+  grid-gap: 20px;
+  height: 20vh;
+  padding-top: 10px;
+}
+
+#projectDatabase #prj1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: prj1;
+}
+
+#projectDatabase #prj2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: prj2;
+}
+
+#projectDatabase #prj3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: prj3;
+}
+
+#projectDatabase #prj4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: prj4;
+}
+
+#projectDatabase #prj5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: prj5;
+}
+
+#projectDatabase #prj6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: prj6;
+}
+
+#projectDatabase #prj7 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: prj7;
+}
+
+#projectDatabase #prj8 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: prj8;
+}
+
+#projectDatabase #prj9 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: prj9;
+}
+
+#projectDatabase #prj10 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: prj10;
+}
+
+#projectDatabase #prj11 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: prj11;
+}
+
+#projectDatabase #prj12 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: prj12;
+}
+
+#projectDatabase .prjBox .launch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 2em;
+  padding: 5px;
+}
+
+#projectDatabase .prjBox .launch a {
+  text-decoration: none;
+  color: #4B2D4B;
+  cursor: pointer;
+}
+
+#projectDatabase .prjBox:hover {
+  background-color: #DAD6D6;
+  opacity: 0.8;
+}
+
+#cv {
+  font-size: 2.5em;
+  background-color: white;
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10px;
+  border-top: #FFA500 1px dotted;
+}
+
+#cv:hover {
+  background-color: #FFA500;
+}
+
+#cv a {
+  text-decoration: none;
+  color: #4B2D4B;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #DAD6D6;
+  width: 100vw;
+  padding: 10px 20px;
+  bottom: 0;
+  text-align: right;
+}
+
+footer button {
+  color: #e7e4e4;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #4B2D4B;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: #e7e4e4;
+  color: #4B2D4B;
+}
+
+#imageReel {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "img1 img2" "img3 img4";
+  grid-gap: 20px;
+  height: 20vh;
+  padding-top: 10px;
+}
+
+#imageReel .image {
+  height: 40vh;
+  width: 40vh;
+  border: 2px solid greenyellow;
+}
+
+#imageReel .image img {
+  width: 100%;
+}
+
+#imageReel .portrait {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#imageReel #img1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img1;
+}
+
+#imageReel #img2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img2;
+}
+
+#imageReel #img3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: img3;
+}
+
+#imageReel #img4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: img4;
+}
+
+/* tablets and above */
+@media screen and (min-width: 787px) {
+  #projectDB {
+    height: 150vh;
+  }
+  #imageDB {
+    height: 120vh;
+  }
+  #projectDatabase {
+        grid-template-areas: "prj1 prj2 prj3" "prj4 prj5 prj6" "prj7 prj8 prj9" "prj10 prj11 prj12";
+  }
+  #imageReel {
+        grid-template-areas: "img1 img2 img3 img4";
+  }
+}
+/*# sourceMappingURL=projects.css.map */

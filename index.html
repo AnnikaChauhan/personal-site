@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Annika | Developer</title>
     <script src="https://kit.fontawesome.com/0f382413cd.js" crossorigin="anonymous"></script>
-    <link id="pagestyle" href="main_light.css" rel="stylesheet" type="text/css">
+    <link id="pagestyle" href="main.css" rel="stylesheet" type="text/css">
 </head>
-<!-- turn the "projects", "about" and "contact" into a drop down so you can filter -->
-<!-- test -->
 <body>
     <div id="top"></div>
     <header>
@@ -25,86 +23,31 @@
             </article>
             <!-- background image on projects - a screenshot of what it is -->
             <div id="projects" class="detail">
-                <article id="prj1" class="prjBox box">
+                <article id="prj1" class="prjBox box launchable">
                     <h3>Project 1</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <div class="launch">
-                        <a href=""><i class="fas fa-rocket"></i></a>
-                        <a href=""><i class="fas fa-code"></i></a>
+                        <a href="" target="_blank"><i class="fas fa-globe"></i></a>
+                        <a href="" target="_blank"><i class="fas fa-code"></i></a>
                     </div>
                 </article>
-                <article id="prj2" class="prjBox box">
+                <article id="prj2" class="prjBox box launchable">
                     <h3>Project 2</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <div class="launch">
-                        <a><i class="fas fa-rocket"></i></a>
+                        <a><i class="fas fa-globe"></i></a>
                         <a><i class="fas fa-code"></i></a>
                     </div>
                 </article>
-                <article id="prj3" class="prjBox box">
-                    <h3>Pick Me Up</h3>
-                    <p>Uses JS to return a motivational quote from the happy database.</p>
+                <article id="prj3" class="prjBox box launchable">
+                    <h3>Project Database</h3>
+                    <p>A page containing all of the projects I have worked on.</p>
                     <div class="launch">
-                        <a href="Motivational/index.html    "><i class="fas fa-rocket"></i></a>
-                        <a href=""><i class="fas fa-code"></i></a>
+                        <a href="./projects.html"><i class="fas fa-globe"></i></a>
                     </div>
                 </article>
-                <article id="prj4" class="prjBox box">
-                    <h3>Chore Door</h3>
-                    <p>A short game that uses JS.</p>
-                    <div class="launch">
-                        <a href="Chore Door/index.html"><i class="fas fa-rocket"></i></a>
-                        <a><i class="fas fa-code"></i></a>
-                    </div>
-                </article>
-                <article id="prj5" class="prjBox box">
-                    <h3>Project 5</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div class="launch">
-                        <a><i class="fas fa-rocket"></i></a>
-                        <a><i class="fas fa-code"></i></a>
-                    </div>
-                </article>
-                <article id="prj6" class="prjBox box">
-                    <h3>Project 6</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div class="launch">
-                        <a><i class="fas fa-rocket"></i></a>
-                        <a><i class="fas fa-code"></i></a>
-                    </div>
-                </article>
-                <article id="prj7" class="prjBox box">
-                    <h3>Project 7</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div class="launch">
-                        <a><i class="fas fa-rocket"></i></a>
-                        <a><i class="fas fa-code"></i></a>
-                    </div>
-                </article>
-                <article id="prj8" class="prjBox box">
-                    <h3>Project 8</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div class="launch">
-                        <a><i class="fas fa-rocket"></i></a>
-                        <a><i class="fas fa-code"></i></a>
-                    </div>
-                </article>
-                <article id="prj9" class="prjBox box">
-                    <h3>Project 9</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div class="launch">
-                        <a><i class="fas fa-rocket"></i></a>
-                        <a><i class="fas fa-code"></i></a>
-                    </div>
-                </article>
-                <article id="prj10" class="prjBox box">
-                    <h3>Project 10</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div class="launch">
-                        <a><i class="fas fa-rocket"></i></a>
-                        <a><i class="fas fa-code"></i></a>
-                    </div>
-                </article>
+                <!-- only have two main projects are then a link to the database, the para should be hidden until you scroll over it -->
+                <!-- have a link to a database with everything in, a giant grid with the filters and stuff -->
             </div>
         </section>
         <section id="aboutTitle">
@@ -114,43 +57,45 @@
             <div id="abouts" class="detail">
                 <article id="abt1" class="abtBox box">
                     <h3>My Journey into Coding</h3>
-                    For a long time I've thought about how cool it would be to know how to code, however as
-                    a young Asian lady it is much harder to choose to do something that is completely
-                    "unknown". I remember picking up a book about C++ when I was younger and wanting
-                    to experiment with the code, but being far too afraid that I'd break the computer to
-                    try!
-                    <br>
-                    I don't currently have much programming experience, other than working with Excel VBA
-                    which is limited to Microsoft software. Most of the people around me, my friends and my
-                    family, are all doctors, dentists, lawyers or accountants. So the natural path when
-                    you're not sure what you want to be and you're good at Math is to become an accountant.
-                    <br>
-                    My first experience of programming was in my first full time job as a Finance Assistant.
-                    I was using Excel and thinking about how to best use a macro to automate a task so that
-                    it would do it itself. I googled for hours and found all of these fascinating
-                    codes that could do so many things beyond a simple spreadsheet - you could even create
-                    emails! And so I fell down the rabbit hole, I googled and I coded. Then I started to
-                    pick up lots of new skills that could be applied to my job and some that could
-                    help the jobs of those around me, I was kind of like a problem solver and I loved it!
-                    <br>
-                    I moved into my second job a year and a half after I started the first. As a Data
-                    Analyst I had far more flexibility in producing systems that really pushed the limit of
-                    what Excel could do and I had many more problems to solve. I realised that I really
-                    did enjoy making things rather than analysing the data, and so I started to learn coding
-                    using Codecademy on their Web Development path. The more I learnt, the more I enjoyed
-                    and so I decided that the next logical step would be to pursue
-                    it as a full time career.
-                </p>
+                    <p>
+                        For a long time I've thought about how cool it would be to know how to code, however as
+                        a young Asian lady it is much harder to choose to do something that is completely
+                        "unknown". I remember picking up a book about C++ when I was younger and wanting
+                        to experiment with the code, but being far too afraid that I'd break the computer to
+                        try!
+                        <br>
+                        <br>
+                        My first experience of programming was in my first full time job as a Finance Assistant.
+                        I was using Excel and thinking about how to best use a macro to automate a task. I googled for hours and found all of these fantastic
+                        codes that could do so many things beyond a simple spreadsheet - you could even create
+                        emails! And so I fell down the rabbit hole, I googled and I coded. Then I started to
+                        pick up lots of new skills that could be applied to my job and to the jobs of those around me, I was kind of like a problem solver and I loved it!
+                        <br>
+                        <br>
+                        I started my second job a year and a half after the first. As a Data
+                        Analyst I had far more flexibility in producing systems that pushed the limit of
+                        what Excel could do and I had many more problems to solve. I realised that I really
+                        did enjoy making things rather than analysing the data, and so I started to learn coding
+                        using Codecademy on their Web Development path. The more I learnt, the more I enjoyed
+                        and so I decided that the next logical step would be to pursue
+                        it as a full time career.
+                    </p>
                 </article>
                 <article id="abt2" class="abtBox box">
-                    <h3>My Journey before Coding</h3>
-                    <!-- this includes education etc -->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </article>
-                <article id="abt3" class="abtBox box">
                     <h3>My Journey alongside Coding</h3>
-                    <!-- this includes hobbies etc, with photos, if a lot do deperately -->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam aliquid veniam nobis. Ipsam perferendis explicabo corporis tempora accusamus velit sunt! Minima ipsa aperiam recusandae unde maxime officiis eius voluptatem ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, perspiciatis itaque perferendis odit eaque nobis ipsa quo libero a ab. Veritatis animi modi odit qui itaque hic perspiciatis obcaecati nam?</p>
+                    <p>Since my roles were always based around logic and numbers, I like to use my free time to express
+                        my creativity. Some of my favourite things to do include painting and photography, mainly
+                        abstracts and textures. Last winter, I volunteered as a costume designer and make up artist for
+                        a Christmas pantomime. I also like to learn new things and improve myself as best posssible, I
+                        find that reading books across a variety of genres gives me that opportunity.</p>
+                </article>
+                <article id="abt3" class="abtBox box launchable">
+                    <h3>Images</h3>
+                    <p>A database containing some of my photography and paintings.</p>
+                    <br>
+                    <div class="launch">
+                        <a href="images.html"><i class="fas fa-globe"></i></a>
+                    </div>
                 </article>
             </div>
         </section>
@@ -159,29 +104,58 @@
                 <h3>Contact</h3>
             </article>
             <div id="contacts" class="detail">
-                <article id="cntct1" class="cntctBox box">
-                    <h3>Get in touch!</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi libero reiciendis at molestiae officiis blanditiis minus maiores excepturi amet eligendi? Porro impedit pariatur adipisci optio blanditiis quam error ut ratione!</p>
-                </article>
                 <article id="cntct2" class="cntctBox box">
                     <h3>My Contact Details</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis at vel sequi quisquam voluptatibus optio nisi voluptates delectus aliquam quia ab, ratione molestias exercitationem quibusdam possimus itaque neque rerum architecto?</p>
+                    <p>I'm always happy to be contacted by like-minded people. <br> If you're interested in finding out
+                        more about my experiences, learning about software development or are considering a career
+                        switch - get in touch! <br>You can contact me by following any of the below links.</p>
+                    <div class="contactLinks">
+                        <a href="mailto:annika@annikachauhan.com"><i class="far fa-envelope"></i></a>
+                        <a href="https://github.com/AnnikaChauhan" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="www.linkedin.com/in/annika-chauhan-a6a2b1175" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
                 </article>
                 <article id="cntct3" class="cntctBox box">
                     <h3>Request a follow up</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis quibusdam libero in sed. Quae, consequatur enim labore iure dolor sapiente dicta nesciunt laboriosam reprehenderit sunt? Aut natus autem iste!</p>
+                    <p>Submit the below form to request a follow up call or email.</p>
+                    <!-- an if statement that depending on whether they select call or email it makes tel or email input required -->
+                    <form class="follow-up" action="https://webhook.site/cec764b7-b208-4ca3-944d-35fd6a17b330"
+                        method="GET">
+                        <div class="section1">
+                            <input type="text" name="name" id="name" placeholder=" Full Name" required>
+                            <br>
+                            <input type="email" name="email" id="email" placeholder=" Email Address">
+                            <input type="tel" name="tel" id="tel" placeholder=" Telephone Number">
+                        </div>
+                        <div class="section2">
+                            <fieldset>
+                                <legend>Follow up</legend>
+                                <input type="radio" name="followup" id="fu-email">
+                                <label for="fu-email">Email</label>
+                                <br>
+                                <input type="radio" name="followup" id="fu-tel">
+                                <label for="fu-tel">Call</label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Message</legend>
+                                <textarea name="message" id="message" cols="30" rows="2"
+                                    placeholder=" Input an optional message here."></textarea>
+                            </fieldset>
+                        </div>
+                        <br>
+                        <input class="submit" type="submit" value="Submit">
+                    </form>
+                    <br>
+                    <p id="personalisedMessage"></p>
                 </article>
             </div>
         </section>
         <article id="cv">
-                <a href="Annika Chauhan Template CV.pdf" target="_blank">Download my CV</a>
+            <a href="Annika Chauhan Template CV.pdf" target="_blank"><i class="fas fa-file-download"></i> Download my CV</a>
         </article>
     </main>
     <footer>
-        <!-- <div id="mode">
-            <button id="lightsheet" onclick="initateLight();">Light Mode</button>
-            <button id="darksheet" onclick="initateDark();">Dark Mode</button>
-        </div> -->
         <a href="#top"><button>Back to Top</button></a>
     </footer>
 

@@ -12,22 +12,18 @@ const instance = new  TypeIt('#element', {
     .go();
 
 // form
-const form = document.querySelector('.signup-form');
-const username = document.getElementById('username');
-const useremail = document.getElementById('useremail');
+const form = document.querySelector('.follow-up');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
 const message = document.getElementById('message');
-const usernames = ['Annika','Rita'];
 
-form.onsubmit = function(e) {
+form.onsubmit = (e) => {
     e.preventDefault();
-    // the console log is just for me to test it understands
-    console.log(username.value);
-    usernames.push(username.value);
     if(message.value === ""){
-        document.getElementById('personalisedText').innerHTML = `Hello ${username.value}. Thank you for your interest. I will get back to you at the email address you provided above (${useremail.value}). You did not submit a personal message.`;
+        document.getElementById('personalisedMessage').innerHTML = `Hello ${name.value}. Thank you for your interest. I will get back to you at the email address you provided above (${email.value}). You did not submit a personal message.`;
         document.getElementById('personalisedText').style.padding = '10px';
     } else {
-        document.getElementById('personalisedText').innerHTML = `Hello ${username.value}. Thank you for your interest. I will get back to you at the email address you provided above (${useremail.value}). The message you submitted was: "${message.value}"`;
+        document.getElementById('personalisedMessage').innerHTML = `Hello ${name.value}. Thank you for your interest. I will get back to you at the email address you provided above (${email.value}). The message you submitted was: "${message.value}"`;
         document.getElementById('personalisedText').style.padding = '10px';
     }
 }
