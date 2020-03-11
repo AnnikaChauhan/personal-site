@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   background-color: white;
@@ -24,21 +25,26 @@ h1, h2, h3, h4 {
 
 section {
   width: 100vw;
-  height: 210vh;
   text-align: center;
 }
 
 section .header {
-  font-size: 2.5em;
   background-color: #FFA500;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 5px;
+}
+
+section .header h3 {
+  font-size: 3em;
 }
 
 section .detail {
@@ -47,14 +53,11 @@ section .detail {
 
 .detail {
   margin: 5px;
-  display: -ms-grid;
-  display: grid;
 }
 
 .detail .box {
-  z-index: 1;
-  height: 30vh;
   padding: 10px;
+  margin: 10px 0;
 }
 
 .detail .box h3 {
@@ -70,18 +73,36 @@ section .detail {
 }
 
 #projectDatabase {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "prj1 prj2"  "prj3 prj4" "prj5 prj6" "prj7 prj8" "prj9 prj10" "prj11 prj12";
-  grid-gap: 20px;
-  height: 20vh;
-  padding-top: 10px;
-}
-
-#projectDatabase .prjBox .launch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#projectDatabase .large {
+  height: 500px;
+}
+
+#projectDatabase .regular {
+  height: 400px;
+}
+
+#projectDatabase .prjBox {
+  width: 350px;
+  position: relative;
+}
+
+#projectDatabase .prjBox .launch {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -103,7 +124,7 @@ section .detail {
 #cv {
   font-size: 2.5em;
   background-color: white;
-  height: 8vh;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,12 +152,13 @@ section .detail {
 footer {
   background-color: #DAD6D6;
   width: 100vw;
+  height: 50px;
   padding: 10px 20px;
   bottom: 0;
   text-align: right;
 }
 
-footer button {
+button {
   color: #e7e4e4;
   text-decoration: none;
   font-size: 1em;
@@ -145,74 +167,21 @@ footer button {
   border-radius: 5px;
   background-color: #4B2D4B;
   cursor: pointer;
+  margin-right: 20px;
 }
 
-footer button:hover {
+button:hover {
   background-color: #e7e4e4;
   color: #4B2D4B;
-}
-
-#imageReel {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "img1 img2" "img3 img4";
-  grid-gap: 20px;
-  height: 20vh;
-  padding-top: 10px;
-}
-
-#imageReel .image {
-  height: 40vh;
-  width: 40vh;
-  border: 2px solid greenyellow;
-}
-
-#imageReel .image img {
-  width: 100%;
-}
-
-#imageReel .portrait {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-#imageReel #img1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: img1;
-}
-
-#imageReel #img2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: img2;
-}
-
-#imageReel #img3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: img3;
-}
-
-#imageReel #img4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: img4;
 }
 
 /* tablets and above */
 @media screen and (min-width: 787px) {
   #projectDB {
-    height: 90vh;
+    height: auto;
   }
-  #imageDB {
-    height: 120vh;
-  }
-  #projectDatabase {
-        grid-template-areas: "prj1 prj2 prj3" "prj4 prj5 prj6" "prj7 prj8 prj9" "prj10 prj11 prj12";
-  }
-  #imageReel {
-        grid-template-areas: "img1 img2 img3 img4";
+  #projectDatabase .prjBox {
+    width: 400px;
   }
 }
 /*# sourceMappingURL=projects.css.map */
