@@ -21,6 +21,7 @@ html {
 }
 
 body {
+    position: relative;
     margin: 0;
     padding: 0;
     background-color: $background-color;
@@ -35,16 +36,20 @@ h1, h2, h3, h4 {
 
 section {
     width: 100vw;
-    height: 210vh;
     text-align: center;
 
     .header {
-        font-size: 2.5em;
         background-color: $orange;
         height: auto;
         display: flex;
+        justify-content: space-between;
         align-items: center;
         padding: 5px;
+
+        h3 {
+            font-size: 3em;
+        }
+        
     }
 
     .detail {
@@ -54,12 +59,10 @@ section {
 
 .detail {
     margin: 5px;
-    display: grid;
 
     .box {
-        z-index: 1;
-        height: 30vh;
         padding: 10px;
+        margin: 10px 0;
 
         h3 {
             font-size: 1.5em;
@@ -74,26 +77,30 @@ section {
             font-size: 1.1em;
         }
     }
-
-
 }
 
 #projectDatabase {
-    display: grid;
-    grid-template-areas:
-    "prj1 prj2" 
-    "prj3 prj4"
-    "prj5 prj6"
-    "prj7 prj8"
-    "prj9 prj10"
-    "prj11 prj12";
-    grid-gap: 20px;
-    height: 20vh;
-    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .large {
+        height: 500px;
+    }
+
+    .regular {
+        height: 400px;
+    }
 
     .prjBox {
+        width: 350px;
+        position: relative;
+
         .launch {
+            position: absolute;
+            bottom: 0;
             display: flex;
+            width: 100%;
             justify-content: space-evenly;
             font-size: 2em;
             padding: 5px;
@@ -108,16 +115,14 @@ section {
         &:hover {
             background-color: $grey3;
             opacity: 0.8;
-
         }
-        
     }
 }
 
 #cv {
     font-size: 2.5em;
     background-color: $grey1;
-    height: 8vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,64 +145,26 @@ section {
 footer {
     background-color: $grey3;
     width: 100vw;
+    height: 50px;
     padding: 10px 20px;
     bottom: 0;
     text-align: right;
-
-    button {
-        color: $grey2;
-        text-decoration: none;
-        font-size: 1em;
-        padding: 5px;
-        border: 1px solid transparent;
-        border-radius: 5px;
-        background-color: $purple;
-        cursor: pointer;
-
-        &:hover {
-            background-color: $grey2;
-            color: $purple;
-        }
-    }
 }
 
-#imageReel {
-    display: grid;
-    grid-template-areas: 
-    "img1 img2"
-    "img3 img4";
-    grid-gap: 20px;
-    height: 20vh;
-    padding-top: 10px;
+button {
+    color: $grey2;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: $purple;
+    cursor: pointer;
+    margin-right: 20px;
 
-    .image {
-        height: 40vh;
-        width: 40vh;
-        border: $highlight-border;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .portrait {
-        transform: rotate(90deg);
-    }
-
-    #img1 {
-        grid-area: img1;
-    }
-
-    #img2 {
-        grid-area: img2;
-    }
-
-    #img3 {
-        grid-area: img3;
-    }
-
-    #img4 {
-        grid-area: img4;
+    &:hover {
+        background-color: $grey2;
+        color: $purple;
     }
 }
 
@@ -206,24 +173,14 @@ footer {
 @media screen and (min-width: 787px) {
 
     #projectDB {
-        height: 90vh;
+        height: auto;
     }
 
-    #imageDB {
-        height: 120vh;
-    }
 
     #projectDatabase {
-        grid-template-areas:
-        "prj1 prj2 prj3"
-        "prj4 prj5 prj6"
-        "prj7 prj8 prj9"
-        "prj10 prj11 prj12";
-    }
-
-    #imageReel {
-        grid-template-areas: 
-        "img1 img2 img3 img4";
+        .prjBox {
+            width: 400px;
+        }
     }
 
 
