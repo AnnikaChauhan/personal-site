@@ -52,12 +52,23 @@ section {
         
     }
 
-    .detail {
-        padding: 0 10px;
+    .searchBar {
+        margin-top: 10px;
+        height: 40px;
+        width: 100vw;
+
+        input {
+            height: 100%;
+            width: 80%;
+            border: 2px solid lightgrey;
+            border-radius: 5px;
+            font-size: 20px;
+        }
     }
 }
 
 .detail {
+    padding: 0 10px;
     margin: 5px;
 
     .box {
@@ -65,16 +76,15 @@ section {
         margin: 10px 0;
 
         h3 {
-            font-size: 1.5em;
+            font-size: 2em;
             padding-bottom: 10px;
             border-bottom: 2px solid $grey3;
-
         }
 
         p {
-            padding: 5px 0;
+            padding: 5px;
             text-align: justify;
-            font-size: 1.1em;
+            font-size: 1em;
         }
     }
 }
@@ -119,10 +129,18 @@ section {
     }
 }
 
+#spacer {
+    height: 100px;
+    width: 100vw;
+}
+
 #cv {
+    position: fixed;
+    bottom: 50px;
     font-size: 2.5em;
     background-color: $grey1;
     width: 100vw;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,6 +161,8 @@ section {
 
 
 footer {
+    position: fixed;
+    bottom: 0;
     background-color: $grey3;
     width: 100vw;
     height: 50px;

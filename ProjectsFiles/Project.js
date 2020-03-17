@@ -15,22 +15,11 @@ export default class Project {
         this.size = size;
     }
 
-    generateLanguageList = () => {
-        let languageList = "";
-        this.languages.forEach(language => {
-            languageList += `<p>- ${language}</p>`;
-        });
-        return languageList;
-    }
-
     get html() {
         // console.log(this.name);
         return `<article class="prjBox box ${this.size}">
             <h3>${this.name}</h3>
             <p>${this.description}</p>
-            <p>Languages Included:
-            ${this.generateLanguageList()}
-            </p>
             <p>This project was produced <em>${this.weekProduced}</em> weeks into the _nology course.</p>
             <div class="launch">
                 <a href="${this.launchLink}" target="_blank"><i class="fas fa-globe"></i></a>
