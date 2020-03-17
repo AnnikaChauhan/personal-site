@@ -262,6 +262,7 @@ section {
     }
 }
 
+/*
 form {
     padding: 5px;
 
@@ -323,11 +324,12 @@ form {
         }
     }
 }
+*/
 
 #cv {
     font-size: 2.5em;
     background-color: $grey1;
-    height: 8vh;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -350,6 +352,7 @@ form {
 footer {
     background-color: $grey3;
     // // width: 100vw;
+    height: 50px;
     padding: 10px 20px;
     bottom: 0;
     text-align: right;
@@ -461,7 +464,7 @@ footer {
         margin: auto;
         grid-template-areas: 
         "cntct2 cntct3";
-        grid-template-columns: 1fr 2fr;
+        // grid-template-columns: 1fr 2fr;
     }
 
     form {    

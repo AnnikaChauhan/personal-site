@@ -47,11 +47,22 @@ section .header h3 {
   font-size: 3em;
 }
 
-section .detail {
-  padding: 0 10px;
+section .searchBar {
+  margin-top: 10px;
+  height: 40px;
+  width: 100vw;
+}
+
+section .searchBar input {
+  height: 100%;
+  width: 80%;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  font-size: 20px;
 }
 
 .detail {
+  padding: 0 10px;
   margin: 5px;
 }
 
@@ -61,15 +72,15 @@ section .detail {
 }
 
 .detail .box h3 {
-  font-size: 1.5em;
+  font-size: 2em;
   padding-bottom: 10px;
   border-bottom: 2px solid #DAD6D6;
 }
 
 .detail .box p {
-  padding: 5px 0;
+  padding: 5px;
   text-align: justify;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 #projectDatabase {
@@ -121,10 +132,18 @@ section .detail {
   opacity: 0.8;
 }
 
+#spacer {
+  height: 100px;
+  width: 100vw;
+}
+
 #cv {
+  position: fixed;
+  bottom: 50px;
   font-size: 2.5em;
   background-color: white;
   width: 100vw;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,6 +169,8 @@ section .detail {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
   background-color: #DAD6D6;
   width: 100vw;
   height: 50px;

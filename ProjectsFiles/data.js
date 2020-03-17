@@ -1,6 +1,6 @@
 const projects = [
     {
-        name: "Guess the State (work in Progress)",
+        name: "Guess the State",
         weekProduced: 5,
         description: "A game built in whilst taking a break from Flappy Dragon, this games gives you ten minutes to guess as many American states as possible.",
         languages: ["HTML", "CSS", "JavaScript"],
@@ -20,7 +20,7 @@ const projects = [
     {
         name: "This Site!",
         weekProduced: 4,
-        description: "This site is something I spent time building from scratch, particularly my project page which has been built using classes and a data JavaScript file.",
+        description: "This site is something I spent time building from scratch, particularly my project page which has been built using classes and pulls data from a JavaScript file.",
         languages: ["HTML", "CSS", "JavaScript","jQuery", "Object Oriented Programming (Classes)"],
         launchLink: "www.annikachauhan.com",
         codeLink: "https://github.com/AnnikaChauhan/personal-site",
@@ -57,5 +57,5 @@ const projects = [
 
 export default projects;
 
-//personal big project, client project, bookworm, omdb, user auth, pokemon, - find a tiny one from the start too
+//personal big project, client project, bookworm, omdb, user auth, pokemon, american flag?? - find a tiny one from the start too
 //use: nology-challenges/js-classes-animals files to demo how to plug the data through
