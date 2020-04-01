@@ -17,10 +17,6 @@ export default class Project {
         this.picture = picture;
     }
 
-    toggleImageOrDescription() {
-        console.log('test');
-    }
-
     get html() {
         return `<article class="prjBox box ${this.size}">
             <h3>${this.name}</h3>

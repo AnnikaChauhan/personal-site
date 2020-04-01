@@ -80,7 +80,7 @@ section .searchBar input {
 .detail .box p {
   padding: 5px;
   text-align: justify;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 #projectDatabase {
@@ -94,12 +94,8 @@ section .searchBar input {
           justify-content: space-evenly;
 }
 
-#projectDatabase .large {
-  height: 500px;
-}
-
 #projectDatabase .regular {
-  height: 400px;
+  height: 450px;
 }
 
 #projectDatabase .prjBox {
@@ -148,6 +144,18 @@ section .searchBar input {
 #projectDatabase .prjBox:hover {
   background-color: #DAD6D6;
   opacity: 0.8;
+}
+
+#projectDatabase .prjBox:hover h3 {
+  border-bottom: 2px solid white;
+}
+
+#projectDatabase .prjBox:hover .description {
+  display: block;
+}
+
+#projectDatabase .prjBox:hover .prjImage {
+  display: none;
 }
 
 #spacer {

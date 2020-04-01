@@ -146,7 +146,6 @@ section .detail {
 
 .detail .box {
   z-index: 1;
-  height: 30vh;
   padding: 10px;
 }
 
@@ -159,33 +158,127 @@ section .detail {
 .detail .box p {
   padding: 5px 0;
   text-align: justify;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
-#projects {
-      grid-template-areas: "prj1" "prj2"  "prj3";
+.projects {
+  text-decoration: none;
 }
 
-#projects #prj1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: prj1;
+.projects p {
+  color: black;
 }
 
-#projects #prj2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: prj2;
+.skills .icons {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-#projects #prj3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: prj3;
+.skills .icons i {
+  font-size: 2em;
+  color: #4B2D4B;
+}
+
+.skills .books {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+}
+
+.skills .books .book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #DAD6D6;
+  color: #4B2D4B;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  padding: auto 0;
+}
+
+.skills .books .book:nth-child(even) {
+  background-color: #4B2D4B;
+  color: #e7e4e4;
+  width: 90%;
+}
+
+.skills .books .book .title {
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.skills .books .book .description {
+  display: none;
+  text-align: center;
+}
+
+.skills .books .book:hover .title {
+  display: none;
+}
+
+.skills .books .book:hover .description {
+  display: block;
+}
+
+.skills .books #one {
+  height: 30px;
+  width: 85%;
+}
+
+.skills .books #two {
+  width: 60%;
+}
+
+.skills .books #three, .skills .books #six {
+  height: 60px;
+}
+
+.skills .books #four {
+  height: 50px;
+}
+
+.skills .books #five {
+  width: 75%;
+  height: 45px;
+}
+
+.skills .books #six {
+  width: 95%;
+}
+
+.skills .books #seven {
+  height: 50px;
+}
+
+.skills .books #eight {
+  height: 80px;
+  width: 75%;
 }
 
 .launchable {
   position: relative;
+  height: 100%;
 }
 
 .launchable .launch {
@@ -213,35 +306,12 @@ section .detail {
   opacity: 0.8;
 }
 
+.launchable:hover h3 {
+  border-bottom: 2px solid white;
+}
+
 #abouts {
   height: auto;
-      grid-template-areas: "abt1" "abt2" "abt3";
-}
-
-#abouts .box p {
-  font-size: 1.1em;
-}
-
-#abouts #abt1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: abt1;
-}
-
-#abouts #abt2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: abt2;
-}
-
-#abouts #abt3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: abt3;
-}
-
-#abouts #abt3 p {
-  font-size: 1.1em;
 }
 
 #abouts .abtBox {
@@ -251,34 +321,18 @@ section .detail {
 
 #contacts {
   height: auto;
-      grid-template-areas: "cntct1" "cntct2" "cntct3";
+  text-align: justify;
 }
 
-#contacts #cntct1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: cntct1;
-}
-
-#contacts #cntct1 p {
+#contacts p {
   font-size: 1.3em;
 }
 
-#contacts #cntct2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: cntct2;
-}
-
-#contacts #cntct2 p {
-  font-size: 1.3em;
-}
-
-#contacts #cntct2 .contactLinks {
+#contacts .contactLinks {
   text-align: center;
 }
 
-#contacts #cntct2 .contactLinks a {
+#contacts .contactLinks a {
   padding: 10px;
   text-decoration: none;
   font-size: 3em;
@@ -286,23 +340,8 @@ section .detail {
   color: #4B2D4B;
 }
 
-#contacts #cntct2 .contactLinks a:hover {
+#contacts .contactLinks a:hover {
   color: #DAD6D6;
-}
-
-#contacts #cntct3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: cntct3;
-}
-
-#contacts #cntct3 p {
-  font-size: 1.2em;
-}
-
-#contacts .cntctBox {
-  height: auto;
-  text-align: justify;
 }
 
 #cv {
@@ -360,15 +399,12 @@ footer button:hover {
   color: #4B2D4B;
 }
 
-#personalisedMessage {
-  padding: 2px;
-  width: 100%;
-  font-size: 1.5em;
-  font-style: italic;
-  text-align: justify;
+@media screen and (max-width: 370px) {
+  header h1 {
+    font-size: 3em;
+  }
 }
 
-/* tablets and above */
 @media screen and (min-width: 900px) {
   header h1 {
     font-size: 6em;
@@ -415,42 +451,14 @@ footer button:hover {
   section .detail {
     padding: 2vh 5vw;
   }
-  section #cntcth3 {
-    height: 100%;
+  section .projects {
+    height: 40vh;
   }
-  #projects {
-    margin: auto;
+  .projectsAndSkills {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "prj1 prj2" "prj3 prj3";
-  }
-  .prjBox {
-    height: auto;
-  }
-  #abouts {
-    margin: auto;
-        grid-template-areas: "abt1 abt1" "abt2 abt3";
-    -ms-grid-columns: 3fr 2fr;
-        grid-template-columns: 3fr 2fr;
-  }
-  #abouts #abt1 {
-    background-size: 100%;
-  }
-  #abouts #abt2 {
-    background-size: 100%;
-  }
-  #contacts {
-    margin: auto;
-        grid-template-areas: "cntct2 cntct3";
-  }
-  form .section1 input {
-    width: 70%;
-  }
-  form .section2 fieldset {
-    width: 70%;
-  }
-  form .submit {
-    width: 70%;
+    -ms-grid-columns: 2fr 3fr;
+        grid-template-columns: 2fr 3fr;
   }
 }
 /*# sourceMappingURL=main.css.map */
