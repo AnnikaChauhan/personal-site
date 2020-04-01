@@ -141,7 +141,7 @@ section .searchBar input {
   position: fixed;
   bottom: 50px;
   font-size: 2.5em;
-  background-color: white;
+  background-color: #DAD6D6;
   width: 100vw;
   height: 50px;
   display: -webkit-box;
@@ -154,11 +154,14 @@ section .searchBar input {
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 10px;
-  border-top: #FFA500 1px dotted;
 }
 
 #cv:hover {
-  background-color: #FFA500;
+  background-color: #4B2D4B;
+}
+
+#cv:hover a {
+  color: #e7e4e4;
 }
 
 #cv a {

@@ -184,10 +184,17 @@ section .detail {
   grid-area: prj3;
 }
 
+.launchable {
+  position: relative;
+}
+
 .launchable .launch {
+  position: absolute;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -203,7 +210,7 @@ section .detail {
 
 .launchable:hover {
   background-color: #DAD6D6;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 #abouts {
@@ -298,72 +305,9 @@ section .detail {
   text-align: justify;
 }
 
-/*
-form {
-    padding: 5px;
-
-    input, label {
-        font-size: 1.3em;
-    }
-
-    input {
-        border: 2px solid $grey3;
-        border-radius: 5px;
-    }
-
-    .section1 {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 5px;
-        
-        input {
-            width: 100%;
-        }
-
-    }
-
-    .section2 fieldset {
-        margin-top: 5px;
-        padding: 5px;
-        border: 2px solid $grey3;
-        border-radius: 5px;
-        width: 100%;
-
-        legend {
-            font-weight: bold;
-            font-size: 1.1em;
-            color: $purple;
-        }
-    }
-
-    textarea {
-        width: 100%;
-        border: 2px solid $grey3;
-        border-radius: 5px;
-        font-size: 1.5em;
-    }
-
-    .submit {
-        width: 100%;
-        color: $grey2;
-        text-decoration: none;
-        font-size: 1.5em;
-        padding: 5px;
-        border: 1px solid transparent;
-        border-radius: 5px;
-        background-color: $purple;
-        cursor: pointer;
-
-        &:hover {
-            background-color: $grey3;
-            color: $purple;
-        }
-    }
-}
-*/
 #cv {
   font-size: 2.5em;
-  background-color: white;
+  background-color: #DAD6D6;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -375,11 +319,14 @@ form {
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 10px;
-  border-top: #FFA500 1px dotted;
 }
 
 #cv:hover {
-  background-color: #FFA500;
+  background-color: #4B2D4B;
+}
+
+#cv:hover a {
+  color: #e7e4e4;
 }
 
 #cv a {
