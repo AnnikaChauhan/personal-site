@@ -18,12 +18,14 @@ export default class Project {
     }
 
     get html() {
-        // console.log(this.name);
         return `<article class="prjBox box ${this.size}">
             <h3>${this.name}</h3>
-            <p>${this.description}</p>
+            <p class="description">${this.description}</p>
             <p>Languages & Tools: ${this.languages}</p>
             <p>This project was produced ${this.weekProduced} weeks into the _nology course.</p>
+            <div class="prjImage">
+                <img src="${this.picture}" alt="${this.name}">
+            </div>
             <div class="launch">
                 <a href="${this.launchLink}" target="_blank"><i class="fas fa-globe"></i></a>
                 <a href="${this.codeLink}" target="_blank"><i class="fas fa-code"></i></a>

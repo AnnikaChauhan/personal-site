@@ -49,7 +49,6 @@ section {
         h3 {
             font-size: 3em;
         }
-        
     }
 
     .searchBar {
@@ -84,7 +83,7 @@ section {
         p {
             padding: 5px;
             text-align: justify;
-            font-size: 1em;
+            font-size: 1.2em;
         }
     }
 }
@@ -94,17 +93,31 @@ section {
     flex-wrap: wrap;
     justify-content: space-evenly;
 
-    .large {
-        height: 500px;
-    }
-
     .regular {
-        height: 400px;
+        height: 450px;
     }
 
     .prjBox {
         width: 350px;
         position: relative;
+
+        .description {
+            display: none;
+        }
+
+        .prjImage {
+            position: absolute;
+            bottom: 55px;
+            height: 200px;
+            width: 95%;
+            border: 2px solid $purple;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+        }
 
         .launch {
             position: absolute;
@@ -112,6 +125,7 @@ section {
             display: flex;
             width: 100%;
             justify-content: space-evenly;
+            height: 50px;
             font-size: 2em;
             padding: 5px;
 
@@ -125,6 +139,18 @@ section {
         &:hover {
             background-color: $grey3;
             opacity: 0.8;
+
+            h3 {
+                border-bottom: 2px solid $grey1;
+            }
+
+            .description {
+                display: block;
+            }
+
+            .prjImage {
+                display: none;
+            }
         }
     }
 }
