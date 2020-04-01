@@ -9,7 +9,8 @@ let projects = projectData.map((project) => {
         project.languages,
         project.launchLink,
         project.codeLink,
-        project.size
+        project.size,
+        project.picture
     );
 });
 

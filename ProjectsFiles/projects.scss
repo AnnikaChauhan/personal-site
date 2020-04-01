@@ -138,17 +138,19 @@ section {
     position: fixed;
     bottom: 50px;
     font-size: 2.5em;
-    background-color: $grey1;
+    background-color: $grey3;
     width: 100vw;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 10px;
-    border-top: $orange 1px dotted;
     
     &:hover {
-        background-color: $orange;
+        background-color: $purple;
+        a {
+            color: $grey2;
+        }
     }
 
     a {

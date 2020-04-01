@@ -5,7 +5,8 @@ export default class Project {
         languages, 
         launchLink, 
         codeLink,
-        size){
+        size,
+        picture){
         this.name = name;
         this.weekProduced = weekProduced;
         this.description = description;
@@ -13,6 +14,7 @@ export default class Project {
         this.launchLink = launchLink;
         this.codeLink = codeLink;
         this.size = size;
+        this.picture = picture;
     }
 
     get html() {
@@ -20,7 +22,8 @@ export default class Project {
         return `<article class="prjBox box ${this.size}">
             <h3>${this.name}</h3>
             <p>${this.description}</p>
-            <p>This project was produced <em>${this.weekProduced}</em> weeks into the _nology course.</p>
+            <p>Languages & Tools: ${this.languages}</p>
+            <p>This project was produced ${this.weekProduced} weeks into the _nology course.</p>
             <div class="launch">
                 <a href="${this.launchLink}" target="_blank"><i class="fas fa-globe"></i></a>
                 <a href="${this.codeLink}" target="_blank"><i class="fas fa-code"></i></a>
