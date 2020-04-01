@@ -107,6 +107,23 @@ section .searchBar input {
   position: relative;
 }
 
+#projectDatabase .prjBox .description {
+  display: none;
+}
+
+#projectDatabase .prjBox .prjImage {
+  position: absolute;
+  bottom: 55px;
+  height: 200px;
+  width: 95%;
+  border: 2px solid #4B2D4B;
+}
+
+#projectDatabase .prjBox .prjImage img {
+  height: 100%;
+  width: 100%;
+}
+
 #projectDatabase .prjBox .launch {
   position: absolute;
   bottom: 0;
@@ -117,6 +134,7 @@ section .searchBar input {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  height: 50px;
   font-size: 2em;
   padding: 5px;
 }

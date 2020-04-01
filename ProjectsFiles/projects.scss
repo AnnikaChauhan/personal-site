@@ -106,12 +106,31 @@ section {
         width: 350px;
         position: relative;
 
+        .description {
+            display: none;
+        }
+
+        .prjImage {
+            position: absolute;
+            bottom: 55px;
+            height: 200px;
+            width: 95%;
+            border: 2px solid $purple;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+        }
+
         .launch {
             position: absolute;
             bottom: 0;
             display: flex;
             width: 100%;
             justify-content: space-evenly;
+            height: 50px;
             font-size: 2em;
             padding: 5px;
 
