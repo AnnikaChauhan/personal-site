@@ -82,7 +82,7 @@ const projects = [
     {
         name: "This Site!",
         weekProduced: 4,
-        description: "This site is something I spent time building from scratch, particularly my project page which has been built using classes and pulls data from a JavaScript file.",
+        description: "This site is something I spent time building from scratch, particularly my project section which has been built using classes and pulls data from a JavaScript file.",
         languages: ["HTML", " CSS", " JavaScript"," jQuery", " OOP"],
         launchLink: "www.annikachauhan.com",
         codeLink: "https://github.com/AnnikaChauhan/personal-site",
