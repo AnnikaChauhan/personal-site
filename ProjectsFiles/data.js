@@ -84,7 +84,7 @@ const projects = [
         weekProduced: 4,
         description: "This site is something I spent time building from scratch, particularly my project section which has been built using classes and pulls data from a JavaScript file.",
         languages: ["HTML", " CSS", " JavaScript"," jQuery", " OOP"],
-        launchLink: "www.annikachauhan.com",
+        launchLink: "",
         codeLink: "https://github.com/AnnikaChauhan/personal-site",
         size: "regular",
         picture: "https://firebasestorage.googleapis.com/v0/b/annika-stuff.appspot.com/o/PersonalProjects%2Fannikachauhan.png?alt=media&token=81fada10-c3be-4485-a2ab-53078b4f8d5b"
