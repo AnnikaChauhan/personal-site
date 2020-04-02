@@ -12,8 +12,8 @@ const projects = [
     {
         name: "Personal Project: Explorer",
         weekProduced: 9,
-        description: "A personal interest project, built entirely alone. A React App where individuals can login to their account (or signup) using Firebase, read blogs by users about their travels (get from firestore), post short blogs about their own travels (post to firestore) and search cities to find the weather and local attractions in that city (two seperate APIs). A work in progress with many new features in the pipeline, access to Trello board is available on the GitHub repo.",
-        languages: ["HTML", " CSS", " JavaScript", " OOP", " React"," Firebase", " Getting from Firestore", " Posting to Firestore"," Email/Password Authentication", " Several APIs"],
+        description: "A personal interest project, built entirely alone. A React App where individuals can login to their account (or signup) using Firebase, read blogs by users about their travels (get from firestore), post short blogs about their own travels (post to firestore) and search cities to find the weather and local attractions in that city (two seperate APIs). A work in progress with many new features in the pipeline, access to Trello board is available on the GitHub repo. Each component is also in the process of being tested.",
+        languages: ["HTML", " CSS", " JavaScript", " OOP", " React"," Firebase", " Getting from Firestore", " Posting to Firestore"," Email/Password Authentication", " Several APIs", " Testing of Components"],
         launchLink: "https://travel-project-d6827.firebaseapp.com/home",
         codeLink: "https://github.com/AnnikaChauhan/travel-project",
         size: "regular",
