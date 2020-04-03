@@ -19,8 +19,8 @@ body {
 }
 
 header {
-  background-color: #DAD6D6;
-  color: #4B2D4B;
+  background-color: #4B2D4B;
+  color: #FFA500;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,10 +46,12 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #FFA500;
 }
 
 header h2 {
   font-size: 2em;
+  color: #FFA500;
 }
 
 h1, h2, h3, h4 {
@@ -94,7 +96,7 @@ h1, h2, h3, h4 {
   top: 0;
   height: 100%;
   width: 51%;
-  background: #4B2D4B;
+  background: #FFA500;
 }
 
 .arrow:before {
@@ -157,7 +159,7 @@ h1, h2, h3, h4 {
   margin-top: 75px;
   margin-left: -30px;
   font-size: 12px;
-  color: #4B2D4B;
+  color: #FFA500;
   font-weight: bold;
   text-transform: uppercase;
   white-space: nowrap;
