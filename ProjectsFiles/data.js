@@ -92,7 +92,7 @@ const projects = [
     {
         name: "Tic Tac Toe",
         weekProduced: 3,
-        description: "A game of tic tac toe for two players. The JS code is something really interesting about this ",
+        description: "A game of tic tac toe for two players. Made simply using JavaScript and events in the DOM, it was interesting to find a solution to the players alternating on a click and then getting a succinct code to define the win conditions.",
         languages: ["HTML", " CSS", " JavaScript"],
         launchLink: "https://annikachauhan.github.io/tic-tac-toe/",
         codeLink: "https://github.com/AnnikaChauhan/tic-tac-toe",
