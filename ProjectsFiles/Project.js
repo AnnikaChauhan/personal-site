@@ -27,7 +27,7 @@ export default class Project {
                 <img src="${this.picture}" alt="${this.name}">
             </div>
             <div class="launch">
-                <a href="${this.launchLink}" target="_blank"><i class="fas fa-globe"></i></a>
+                <a href="${this.launchLink}" target="_blank"><i class="fas fa-rocket"></i></i></a>
                 <a href="${this.codeLink}" target="_blank"><i class="fas fa-code"></i></a>
             </div>
         </article>`
