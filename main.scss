@@ -33,8 +33,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 90vh;
+    justify-content: space-evenly;
+    height: 100vh;
+    text-align: center;
 
     h1 {
         font-size: 3.5em;
@@ -53,36 +54,88 @@ h1, h2, h3, h4 {
 }
 
 .notification {
-    font-size: 2em;
-    text-align: center;
-    height: 10vh;
-    background-color: $grey3;
+    position: relative;
+    width: 24px;
+    height: 24px;
 
     a {
-        color: $purple;
-        cursor: pointer;
-        opacity: 0.6;
+        text-decoration: none;
     }
-
-    .fa-angle-down {
-        font-size: 2em;                
     }
-
-    .bounce {
-        display: inline-block;
-        position: relative;
-        -moz-animation: bounce 1s infinite linear;
-        -o-animation: bounce 1s infinite linear;
-        -webkit-animation: bounce 1s infinite linear;
-        animation: bounce 1s infinite linear;
-
+  
+  .arrow {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+  }
+  
+  .arrow:first-child {
+    animation: move 3s ease-out 1s infinite;
+  }
+  
+  .arrow:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+  }
+  
+  .arrow:before,
+  .arrow:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: $purple;
+  }
+  
+  .arrow:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+  }
+  
+  .arrow:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+  }
+  
+  @keyframes move {
+    25% {
+      opacity: 1;
+  
     }
-
-    @keyframes bounce {
-        0% { top: 0; }
-        50% { top: -0.2em; }
-        70% { top: -0.3em; }
-        100% { top: 0; }
+    33% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+  }
+  
+  .text {
+    display: block;
+    margin-top: 75px;
+    margin-left: -30px;
+    font-size: 12px;
+    color: $purple;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: .25;
+    animation: pulse 2s linear alternate infinite;
+  }
+  
+  @keyframes pulse {
+    to {
+      opacity: 1;
     }
 }
 
@@ -265,7 +318,7 @@ nav {
             }
 
             .title {
-                font-size: 1.4em;
+                font-size: 1.5em;
                 text-align: center;
             }
 
@@ -296,6 +349,9 @@ nav {
         }
         #four {
             height: 50px;
+            .title {
+                font-size: 1.3em;
+            }
         }
         #five {
             width: 75%;
