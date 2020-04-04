@@ -201,6 +201,10 @@ nav {
         font-size: 1.5em;
         font-weight: bold;
         padding: 10px 0;
+
+        &:hover {
+            color: $grey3;
+        }
     }
 }
 
@@ -438,7 +442,7 @@ nav {
 
 #cv {
     font-size: 2.5em;
-    background-color: $grey3;
+    background-color: $purple;
     height: 50px;
     display: flex;
     align-items: center;
@@ -447,15 +451,15 @@ nav {
     bottom: 10px;
     
     &:hover {
-        background-color: $purple;
+        background-color: $grey3;
         a {
-            color: $grey2;
+            color: $purple;
         }
     }
 
     a {
         text-decoration: none;
-        color: $purple;
+        color: $grey3;
         cursor: pointer;
         font-weight: bold;
     }

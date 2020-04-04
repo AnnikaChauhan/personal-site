@@ -258,6 +258,10 @@ nav a {
   padding: 10px 0;
 }
 
+nav a:hover {
+  color: #DAD6D6;
+}
+
 #projectDatabase {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -522,7 +526,7 @@ nav a {
 
 #cv {
   font-size: 2.5em;
-  background-color: #DAD6D6;
+  background-color: #4B2D4B;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,16 +542,16 @@ nav a {
 }
 
 #cv:hover {
-  background-color: #4B2D4B;
+  background-color: #DAD6D6;
 }
 
 #cv:hover a {
-  color: #e7e4e4;
+  color: #4B2D4B;
 }
 
 #cv a {
   text-decoration: none;
-  color: #4B2D4B;
+  color: #DAD6D6;
   cursor: pointer;
   font-weight: bold;
 }
