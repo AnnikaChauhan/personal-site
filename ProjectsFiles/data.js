@@ -2,7 +2,7 @@ const projects = [
     {
         name: "BookWorm | Angular",
         weekProduced: 10,
-        description: "An app build using the same principles as BookWorm | React, but built in Angular. This app is currently built with static data but is hooked up to Firebase with the intention of adding a database in the future. My first Angular app built entirely alone. It is currently very basic but more features will be added.",
+        description: "An app build using the same principles as BookWorm | React (available below), but built in Angular. This app is currently built with static data but is hooked up to Firebase with the intention of adding a database in the future. My first Angular app built entirely alone. It is currently very basic but more features will be added.",
         languages: ["HTML", " CSS", " JavaScript", " TypeScript", " Angular"," Firebase"],
         launchLink: "https://bookworm-angular.web.app/",
         codeLink: "https://github.com/AnnikaChauhan/bookworm-angular-firebase",
