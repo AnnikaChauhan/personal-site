@@ -1,5 +1,15 @@
 const projects = [
     {
+        name: "BookWorm | Angular",
+        weekProduced: 10,
+        description: "An app build using the same principles as BookWorm | React, but built in Angular. This app is currently built with static data but is hooked up to Firebase with the intention of adding a database in the future. My first Angular app built entirely alone. It is currently very basic but more features will be added.",
+        languages: ["HTML", " CSS", " JavaScript", " TypeScript", " Angular"," Firebase"],
+        launchLink: "https://bookworm-angular.web.app/",
+        codeLink: "https://github.com/AnnikaChauhan/bookworm-angular-firebase",
+        size: "regular",
+        picture: "https://firebasestorage.googleapis.com/v0/b/annika-stuff.appspot.com/o/PersonalProjects%2Fbookworm-angular.png?alt=media&token=3518f720-b55c-41bf-badd-9f9a5477b8c2"
+    },
+    {
         name: "NASA APOD & Mars Weather",
         weekProduced: 10,
         description: "A very small project, built very simply using HTML, CSS and JavaScript to practice using various API fetch methods. API fetches APOD and Mars Weather Data. Mars weather data was presented in a very interesting way and therefore getting the app to be fully dynamic was a fun challenge, the code is more interesting than the app!",
@@ -50,7 +60,7 @@ const projects = [
         picture: "https://firebasestorage.googleapis.com/v0/b/annika-stuff.appspot.com/o/PersonalProjects%2Fpokedex.png?alt=media&token=89297bae-f783-4f3b-8a1c-644280672ca8"
     },
     {
-        name: "BookWorm",
+        name: "BookWorm | React",
         weekProduced: 6,
         description: "A React App, built with a Firebase noSQL database (and Firebase storage) where books can be created. The firestore has been linked to the React app and all books from the database render to the app. Additionally, in the navbar there is a count of the total number of books in the app and a list of authors of the books available.",
         languages: ["HTML", " CSS", " JavaScript", " OOP"," React"," Firebase", " Getting from Firestore"],
@@ -87,7 +97,7 @@ const projects = [
         launchLink: "",
         codeLink: "https://github.com/AnnikaChauhan/personal-site",
         size: "regular",
-        picture: "https://firebasestorage.googleapis.com/v0/b/annika-stuff.appspot.com/o/PersonalProjects%2Fannikachauhan.png?alt=media&token=81fada10-c3be-4485-a2ab-53078b4f8d5b"
+        picture: "https://firebasestorage.googleapis.com/v0/b/annika-stuff.appspot.com/o/PersonalProjects%2Fannikachauhannew.png?alt=media&token=8c2a43c6-ce12-4e47-a5bd-bd850866eb82"
     },
     {
         name: "Tic Tac Toe",
@@ -108,7 +118,12 @@ const projects = [
         codeLink: "https://github.com/AnnikaChauhan/rock-paper-scissors",
         size: "regular",
         picture: "https://firebasestorage.googleapis.com/v0/b/annika-stuff.appspot.com/o/PersonalProjects%2Frock_paper_scissors.png?alt=media&token=c55142a6-9558-4b88-a0a3-01d036d366de"
-    },
+    }
+];
+
+export default projects;
+
+const unusedProjects = [
     {
         name: "Instagram Recreation",
         weekProduced: 2,
@@ -119,6 +134,4 @@ const projects = [
         size: "regular",
         picture: "https://firebasestorage.googleapis.com/v0/b/annika-stuff.appspot.com/o/PersonalProjects%2Finstagram_recreation.png?alt=media&token=d7a6b37e-839b-4136-b169-d19ba970267d"
     }
-];
-
-export default projects;
+]
