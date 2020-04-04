@@ -290,7 +290,7 @@ nav a {
 
 #projectDatabase .prjBox .prjImage {
   position: absolute;
-  bottom: 55px;
+  bottom: 60px;
   height: 200px;
   width: 95%;
   border: 2px solid #4B2D4B;
@@ -303,7 +303,7 @@ nav a {
 
 #projectDatabase .prjBox .launch {
   position: absolute;
-  bottom: 0;
+  bottom: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,13 +322,17 @@ nav a {
   cursor: pointer;
 }
 
+#projectDatabase .prjBox .launch a:hover {
+  color: #DAD6D6;
+}
+
 #projectDatabase .prjBox:hover {
-  background-color: #DAD6D6;
+  background-color: #e7e4e4;
   opacity: 0.8;
 }
 
 #projectDatabase .prjBox:hover h3 {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #FFA500;
 }
 
 #projectDatabase .prjBox:hover .description {
@@ -489,6 +493,15 @@ nav a {
 
 .launchable:hover h3 {
   border-bottom: 2px solid white;
+}
+
+.blog a {
+  text-decoration: none;
+  color: #4B2D4B;
+}
+
+.blog a:hover {
+  color: #DAD6D6;
 }
 
 .contactLinks {

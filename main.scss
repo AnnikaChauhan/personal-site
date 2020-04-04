@@ -229,7 +229,7 @@ nav {
 
         .prjImage {
             position: absolute;
-            bottom: 55px;
+            bottom: 60px;
             height: 200px;
             width: 95%;
             border: 2px solid $purple;
@@ -243,7 +243,7 @@ nav {
 
         .launch {
             position: absolute;
-            bottom: 0;
+            bottom: 8px;
             display: flex;
             width: 100%;
             justify-content: space-evenly;
@@ -255,15 +255,19 @@ nav {
                 text-decoration: none;
                 color: $purple;
                 cursor: pointer;
+
+                &:hover {
+                    color: $grey3;
+                }
             }
         }
         
         &:hover {
-            background-color: $grey3;
+            background-color: $grey2;
             opacity: 0.8;
 
             h3 {
-                border-bottom: 2px solid $grey1;
+                border-bottom: 2px solid $orange;
             }
 
             .description {
@@ -403,6 +407,15 @@ nav {
 
     }
     
+}
+
+.blog a {
+    text-decoration: none;
+    color: $purple;
+
+    &:hover {
+        color: $grey3;
+    }
 }
 
 .contactLinks {

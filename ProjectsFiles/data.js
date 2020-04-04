@@ -2,7 +2,7 @@ const projects = [
     {
         name: "BookWorm | Angular",
         weekProduced: 11,
-        description: "An app build using the same principles as BookWorm | React (available below), but built in Angular. This app is currently built with static data but is hooked up to Firebase with the intention of adding a database in the future. My first Angular app built entirely alone. It is currently very basic but more features will be added.",
+        description: "An app built using the same principles as BookWorm | React (available below), but built in Angular. This app is currently built with static data but is hooked up to Firebase with the intention of adding a database in the future. My first Angular app built entirely alone. It is currently very basic but more features will be added.",
         languages: ["HTML", " CSS", " JavaScript", " TypeScript", " Angular"," Firebase"],
         launchLink: "https://bookworm-angular.web.app/",
         codeLink: "https://github.com/AnnikaChauhan/bookworm-angular-firebase",
@@ -42,7 +42,7 @@ const projects = [
     {
         name: "User Authentication",
         weekProduced: 8,
-        description: "A very basic looking React App that tests the principles of private routing. When you click the sign in button you are redircted to a google login prompt, once you login you are redirected to the Private page, which can only be accessed once logged in. Once here, the anonymous information is replaced with your own information from Google.",
+        description: "A very basic looking React App that tests the principles of private routing and authentication. When you click the sign in button you are redircted to a google login prompt, once you login you are redirected to the Private page, which can only be accessed once logged in. Once here, the anonymous information is replaced with your own information from Google.",
         languages: ["HTML", " CSS", " JavaScript", " OOP", " React", " Private Routing", " Firebase"," Google Authentication"],
         launchLink: "https://users-authentication-e5d61.firebaseapp.com/public",
         codeLink: "https://github.com/AnnikaChauhan/users-authentication",
