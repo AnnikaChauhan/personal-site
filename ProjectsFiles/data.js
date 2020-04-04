@@ -1,7 +1,7 @@
 const projects = [
     {
         name: "BookWorm | Angular",
-        weekProduced: 10,
+        weekProduced: 11,
         description: "An app build using the same principles as BookWorm | React (available below), but built in Angular. This app is currently built with static data but is hooked up to Firebase with the intention of adding a database in the future. My first Angular app built entirely alone. It is currently very basic but more features will be added.",
         languages: ["HTML", " CSS", " JavaScript", " TypeScript", " Angular"," Firebase"],
         launchLink: "https://bookworm-angular.web.app/",
@@ -22,7 +22,7 @@ const projects = [
     {
         name: "Personal Project: Explorer",
         weekProduced: 9,
-        description: "A personal interest project, built entirely alone. A React App where individuals can login to their account (or signup) using Firebase, read blogs by users about their travels (get from firestore), post short blogs about their own travels (post to firestore) and search cities to find the weather and local attractions in that city (two seperate APIs). Many new features in the pipeline. Access to Trello board is available on the GitHub, additionally a list of tested components.",
+        description: "A personal interest project, built entirely alone. A React App where individuals can login to their account (or signup) using Firebase, read blogs by users (get from firestore), post short blogs about their own travels (post to firestore) and search cities to find the weather and local attractions in that city (two APIs). Access to Trello board for feature list is available on the GitHub, additionally a list of tested components.",
         languages: ["HTML", " CSS", " JavaScript", " OOP", " React"," Firebase", " Getting from Firestore", " Posting to Firestore"," Email/Password Authentication", " Several APIs", " Testing"],
         launchLink: "https://travel-project-d6827.firebaseapp.com/home",
         codeLink: "https://github.com/AnnikaChauhan/travel-project",
@@ -32,7 +32,7 @@ const projects = [
     {
         name: "Client Project: The Drop",
         weekProduced: 9,
-        description: "The Drop was the client project of our cohort at _nology. The React app is a platform for artists to publish announcements about when they will next be releasing music to the public (using a form user interface for the artist to submit for each release) and fans can login to their side of the app to follow artists and see their releases. Tickets I worked on included: user authentication and Spotify API set up to access artist's that a fan follows on Spotify.",
+        description: "The Drop was the _nology client project. The React app is a platform for artists to publish announcements about when they will next be releasing music to the public (using a form for the artist to submit for each release) and fans can login to their side of the app to follow artists and see their releases. Tickets I worked on included: user authentication and Spotify API set up to access artist's that a fan follows on Spotify.",
         languages: ["HTML", " CSS", " JavaScript", " OOP", " React"," Firebase"," Getting from Firestore", " Posting to Firestore"," Google & Email Authentication", " Spotify API"],
         launchLink: "https://the-drop-x-nology.web.app/",
         codeLink: "https://github.com/nology-tech/the-drop-x-nology",
@@ -112,8 +112,8 @@ const projects = [
     {
         name: "Rock Paper Scissors",
         weekProduced: 3,
-        description: "A game of rock paper scissors played against the computer. The JS code of this is what I believe is most interesting, I tried to find a unique way to solve the problem and used a 'matrix' to find the winning outcome.",
-        languages: ["HTML", " CSS", " JavaScript"],
+        description: "A game of rock paper scissors played against the computer. The JS code of this is what I believe is most interesting, I tried to find a unique way to solve the problem and used a 'matrix' to find the winning outcome. After learning TypeScript in Week 11 this project was updated to a new version written using very basic TypeScript principles to practice what we'd learnt.",
+        languages: ["HTML", " CSS", " JavaScript", " basic TypeScript"],
         launchLink: "https://annikachauhan.github.io/rock-paper-scissors/",
         codeLink: "https://github.com/AnnikaChauhan/rock-paper-scissors",
         size: "regular",
