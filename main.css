@@ -203,7 +203,7 @@ section .header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 20px;
+  margin: 45px 20px 20px 20px;
   border-bottom: 5px solid #FFA500;
 }
 
@@ -362,8 +362,9 @@ nav a:hover {
 }
 
 .skills .icons i {
-  font-size: 2em;
+  font-size: 1.8em;
   color: #4B2D4B;
+  padding: 0 1px;
 }
 
 .skills .books {
@@ -582,6 +583,9 @@ footer button:hover {
 @media screen and (max-width: 370px) {
   header h1 {
     font-size: 3em;
+  }
+  .skills .icons i {
+    font-size: 1.3em;
   }
 }
 

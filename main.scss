@@ -152,7 +152,7 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 20px;
+        margin: 45px 20px 20px 20px;
         border-bottom: 5px solid $orange;
     }
 
@@ -296,8 +296,9 @@ nav {
         justify-content: space-evenly;
         
         i {
-            font-size: 2em;
+            font-size: 1.8em;
             color: $purple;
+            padding: 0 1px;
         }
     }
 
@@ -493,6 +494,15 @@ footer {
     header {
         h1 {
             font-size: 3em;
+        }
+    }
+
+    .skills {
+        .icons {
+            i {
+                font-size: 1.3em;
+            }
+            
         }
     }
 }
