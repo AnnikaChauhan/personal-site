@@ -35,7 +35,7 @@ const projects = [
         description: "The Drop was the _nology client project. The React app is a platform for artists to publish announcements about when they will next be releasing music to the public (using a form for the artist to submit for each release) and fans can login to their side of the app to follow artists and see their releases. Tickets I worked on included: user authentication and Spotify API set up to access artist's that a fan follows on Spotify.",
         languages: ["HTML", " CSS", " SASS", " JavaScript", " OOP", " React"," Firebase"," Getting from Firestore", " Posting to Firestore"," Google & Email Authentication", " Spotify API"],
         launchLink: "https://the-drop-x-nology.web.app/",
-        codeLink: "https://github.com/nology-tech/the-drop-x-nology",
+        codeLink: "https://github.com/AnnikaChauhan/the-drop-x-nology",
         size: "regular",
         picture: "https://firebasestorage.googleapis.com/v0/b/annika-stuff.appspot.com/o/PersonalProjects%2Fthe_drop.png?alt=media&token=02835b9e-efd1-4e0b-a60d-f934cf997bcb"
     },
