@@ -80,9 +80,9 @@ const projects = [
         picture: "https://firebasestorage.googleapis.com/v0/b/annika-stuff.appspot.com/o/PersonalProjects%2Fguess_the_state.png?alt=media&token=c354ebd1-dc7e-46b1-950d-015c95688b02"
     },
     {
-        name: "Flappy Dragon (ish)",
+        name: "Flappy Dragon (part 1)",
         weekProduced: 5,
-        description: "A game built in an attempt to recreate flappy bird, this was the first attempt at building an entire game from scratch. It is currently completing the bare principle of the game - the dragon falls but rises on a spacebar click and an obstacle moves across the screen, if they collide the game ends.",
+        description: "A game built in an attempt to recreate flappy bird, this was the first attempt at building an entire game from scratch. It is currently completing the bare principle of the game - the dragon falls but rises on a spacebar click and an obstacle moves across the screen, if they collide the game ends. Part Two of this game is in production! With my new and improved skills after the course, I have decided to create this game again, a link is in this repo.",
         languages: ["HTML", " CSS", " SASS", " JavaScript"],
         launchLink: "https://annikachauhan.github.io/flappy-game/",
         codeLink: "https://github.com/AnnikaChauhan/flappy-game",
