@@ -22,7 +22,6 @@ export default class Project {
             <h3>${this.name}</h3>
             <p class="description">${this.description}</p>
             <p>Languages & Tools: ${this.languages}</p>
-            <p>Produced in week ${this.weekProduced} of the _nology course.</p>
             <div class="prjImage">
                 <img src="${this.picture}" alt="${this.name}">
             </div>

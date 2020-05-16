@@ -1,5 +1,15 @@
 const projects = [
     {
+        name: "Weather App | Hooks & Context",
+        weekProduced: 20,
+        description: "An app built using the functional React principles like Hooks and pairing this with Context to create an application. This is based on my self teaching of the subjects hooks and context after the course. This application allows you to see the current weather and the weather forecast in a city of your choice - the default is set to London but can be changed using the input field. You can see more information about the weather forecast by clicking on the daily forecast.",
+        languages: ["HTML", " CSS", " SASS", " JavaScript", " React", " Hooks", " Context"],
+        launchLink: "https://annikachauhan.github.io/functional-react-weather-app/",
+        codeLink: "https://github.com/AnnikaChauhan/functional-react-weather-app",
+        size: "regular",
+        picture: "https://firebasestorage.googleapis.com/v0/b/annika-stuff.appspot.com/o/PersonalProjects%2Ffunctionalweatherapp.png?alt=media&token=c7f20c76-c109-418d-be89-4ee110cafcfe"
+    },
+    {
         name: "BookWorm | Angular",
         weekProduced: 11,
         description: "An app built using the same principles as BookWorm | React (available below), but built in Angular. This app is currently built with data in a seperate data file but is hooked up to Firebase with the intention of adding a database in the future. My first Angular app built entirely alone. It is currently very basic but more features will be added.",
