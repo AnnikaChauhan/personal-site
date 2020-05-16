@@ -215,6 +215,12 @@ section small {
   text-align: center;
 }
 
+section small a {
+  text-decoration: none;
+  color: #4B2D4B;
+  font-weight: bold;
+}
+
 .detail {
   margin: 20px;
 }
